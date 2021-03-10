@@ -35,8 +35,8 @@ body, html {
     margin: auto;
     white-space: nowrap;
     animation:
-        typing 2.5s steps(40, end),
-        blink-caret .6s step-end 3 forwards;
+        typing 3.2s steps(40, end),
+        blink-caret .6s step-end 4 forwards;
 }
 
 .jumbotron h2 {
@@ -62,12 +62,12 @@ body, html {
 
 /* ABOUT */
 .about-container {
-    height: 1000px;
+    height: fit-content;
     background-color: #eee;
 }
 
 .section-title {
-    padding: 100px 0;
+    padding: 100px 0px 75px 0px;
 }
 
 .section-title h1 {
@@ -89,15 +89,25 @@ body, html {
 }
 
 .portrait-container {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url('../../../assets/portraitme.jpg');
+    background-size: cover;
+    background-position: 50%;
+    margin: auto;
 }
 
-.portrait-image {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 50%;
+.about-me-container {
+    margin-top: 50px;
+}
+
+.row {
+    width: 1100px;
+    margin: auto;
+}
+
+.about-me-container h2 {
+    text-align: center;
 }
 /* ABOUT */

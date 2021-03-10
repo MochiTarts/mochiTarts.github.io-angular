@@ -1,6 +1,7 @@
 @import "src/styles";
 
 .nav {
+    z-index: 9999;
     position: fixed;
     top: 0;
     text-align: center;
