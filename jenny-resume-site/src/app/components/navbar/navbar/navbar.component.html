@@ -1,12 +1,12 @@
-<nav class="nav">
+<nav class="nav" (scroll)="onWindowScroll($event)">
     <span class="nav-item">
-        <a class="nav-link" [routerLink]="['']" fragment="homeLink">Home</a>
+        <a class="nav-link" (click)="gotoTop()">Home</a>
     </span>
     <span class="nav-item">
-        <a class="nav-link" [routerLink]="['']" fragment="aboutLink">About</a>
+        <a class="nav-link" (click)="gotoAbout()">About</a>
     </span>
     <span class="nav-item">
-        <a class="nav-link" href="#">Skills</a>
+        <a class="nav-link" (click)="gotoSkills()">Skills</a>
     </span>
     <span class="nav-item">
         <a class="nav-link" href="#">Projects</a>

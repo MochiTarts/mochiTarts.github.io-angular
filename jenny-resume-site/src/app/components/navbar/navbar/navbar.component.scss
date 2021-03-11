@@ -13,6 +13,19 @@
     font-weight: lighter;
 }
 
+.nav-inverse {
+    background-color: #333;
+}
+
+.nav-inverse .nav-link {
+    color: white;
+}
+
+.nav-inverse .nav-link:hover {
+	border-bottom: solid 2px white;
+    cursor: pointer;
+}
+
 .nav-item {
 	padding: 10px 20px;
 }

@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "title": "Hi! I am...",
+        "points": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel congue velit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel congue velit."
+        ]
+    },
+    {
+        "id": "2",
+        "title": "I can do...",
+        "points": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel congue velit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel congue velit."
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Other things I can do...",
+        "points": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel congue velit.",
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel congue velit."
+        ]
+    }
+]

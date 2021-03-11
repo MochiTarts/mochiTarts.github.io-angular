@@ -3,6 +3,10 @@ body, html {
     margin: 0;
 }
 
+.row {
+    margin: auto;
+}
+
 /* HEADER */
 .header {
     background-image: url('../../../assets/header.JPG');
@@ -63,11 +67,11 @@ body, html {
 /* ABOUT */
 .about-container {
     height: fit-content;
-    background-color: #eee;
+    background-color: #f4f4f4;
 }
 
 .section-title {
-    padding: 100px 0px 75px 0px;
+    padding: 50px 0px 75px 0px;
 }
 
 .section-title h1 {
@@ -78,7 +82,7 @@ body, html {
 }
 
 .underline {
-    border-bottom: 3px solid indianred;
+    border-bottom: 3px solid #ff91a4;
     width: 100px;
     padding-top: 25px;
     margin: auto;
@@ -94,20 +98,52 @@ body, html {
     border-radius: 50%;
     background-image: url('../../../assets/portraitme.jpg');
     background-size: cover;
-    background-position: 50%;
+    background-position: 60%;
     margin: auto;
+}
+
+.about-row {
+    width: 1100px;
 }
 
 .about-me-container {
     margin-top: 50px;
-}
-
-.row {
-    width: 1100px;
-    margin: auto;
+    padding-bottom: 50px;
 }
 
 .about-me-container h2 {
     text-align: center;
 }
 /* ABOUT */
+
+/* SKILLS */
+.skills-container {
+    height: fit-content;
+    background-color: #eee;
+}
+
+.skills-row {
+    width: 700px;
+    max-width: 900px;
+    padding: 30px 0px;
+}
+
+.skills-summary-container h2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.skills-container {
+    padding-bottom: 50px;
+}
+
+.chart-wrapper {
+    height: 350px;
+}
+/* SKILLS */

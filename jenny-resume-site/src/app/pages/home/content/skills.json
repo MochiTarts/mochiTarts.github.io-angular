@@ -1,0 +1,131 @@
+[
+    {
+        "id": "1",
+        "title": "Languagues",
+        "data": [
+            {
+                "name": "Python",
+                "grade": 90
+            },
+            {
+                "name": "Java",
+                "grade": 75
+            },
+            {
+                "name": "HTML/CSS",
+                "grade": 70
+            },
+            {
+                "name": "C#",
+                "grade": 45
+            },
+            {
+                "name": "Typescript",
+                "grade": 40
+            },
+            {
+                "name": "Javascript",
+                "grade": 25
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Frameworks",
+        "data": [
+            {
+                "name": "Django",
+                "grade": 80
+            },
+            {
+                "name": "Spring Boot",
+                "grade": 90
+            },
+            {
+                "name": "Angular",
+                "grade": 75
+            },
+            {
+                "name": "Node.js",
+                "grade": 50
+            },
+            {
+                "name": "React",
+                "grade": 25
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Technologies",
+        "data": [
+            {
+                "name": "MongoDB",
+                "grade": 90
+            },
+            {
+                "name": "PostgresSQL",
+                "grade": 80
+            },
+            {
+                "name": "Git",
+                "grade": 80
+            },
+            {
+                "name": "Firebase",
+                "grade": 70
+            },
+            {
+                "name": "Google Cloud Platform",
+                "grade": 30
+            },
+            {
+                "name": "Docker",
+                "grade": 50
+            },
+            {
+                "name": "Github Actions",
+                "grade": 40
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Software, Practices, & DevOps",
+        "data": [
+            {
+                "name": "Linux",
+                "grade": 90
+            },            {
+                "name": "Agile/Scrum",
+                "grade": 75
+            },
+            {
+                "name": "Web Deployment",
+                "grade": 70
+            },
+            {
+                "name": "CI/CD",
+                "grade": 50
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "title": "Extraccuriculars",
+        "data": [
+            {
+                "name": "Piano & Music Composition",
+                "grade": 70
+            },
+            {
+                "name": "Creative Writing",
+                "grade": 100
+            },
+            {
+                "name": "Visual Arts",
+                "grade": 50
+            }
+        ]
+    }
+]
