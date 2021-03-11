@@ -91,18 +91,23 @@
     },
     {
         "id": "4",
-        "title": "Software, Practices, & DevOps",
+        "title": "Software, Tools, & DevOps",
         "data": [
             {
                 "name": "Linux",
                 "grade": 90
-            },            {
-                "name": "Agile/Scrum",
+            },
+            {
+                "name": "Visual Studio",
+                "grade": 80
+            },
+            {
+                "name": "Agile (Scrum)",
                 "grade": 75
             },
             {
                 "name": "Web Deployment",
-                "grade": 70
+                "grade": 55
             },
             {
                 "name": "CI/CD",
