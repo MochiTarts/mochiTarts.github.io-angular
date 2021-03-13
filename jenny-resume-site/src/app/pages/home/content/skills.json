@@ -1,6 +1,5 @@
 [
     {
-        "id": "1",
         "title": "Languagues",
         "data": [
             {
@@ -30,7 +29,6 @@
         ]
     },
     {
-        "id": "2",
         "title": "Frameworks",
         "data": [
             {
@@ -56,7 +54,6 @@
         ]
     },
     {
-        "id": "3",
         "title": "Technologies",
         "data": [
             {
@@ -90,7 +87,6 @@
         ]
     },
     {
-        "id": "4",
         "title": "Software, Tools, & DevOps",
         "data": [
             {
@@ -116,7 +112,6 @@
         ]
     },
     {
-        "id": "5",
         "title": "Extraccuriculars",
         "data": [
             {

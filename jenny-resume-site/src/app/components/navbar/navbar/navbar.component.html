@@ -1,4 +1,4 @@
-<nav class="nav" (scroll)="onWindowScroll($event)">
+<nav class="nav justify-content-center" (scroll)="onWindowScroll($event)">
     <span class="nav-item">
         <a class="nav-link" (click)="gotoTop()">Home</a>
     </span>
@@ -9,7 +9,7 @@
         <a class="nav-link" (click)="gotoSkills()">Skills</a>
     </span>
     <span class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" (click)="gotoProjects()">Projects</a>
     </span>
     <span class="nav-item">
         <a class="nav-link" href="#">Experiences</a>

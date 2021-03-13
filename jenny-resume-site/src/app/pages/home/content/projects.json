@@ -1,0 +1,150 @@
+[
+    {
+        "title": "Find Dining",
+        "date": "Jan - Present",
+        "thumbnail": "../../../assets/find_dining_logo_name.png",
+        "short_desc": "An online promotion platform for Scarborough restaurants to share their stories.",
+        "images": [
+            {
+                "image": "../../../assets/find_dining_logo_name.png",
+                "alt": "Find Dining logo"
+            }
+        ],
+        "long_desc": "More details coming later!",
+        "link": "https://finddining.ca/"
+    },
+    {
+        "title": "U-Impactify",
+        "date": "Sept - Dec 2020",
+        "thumbnail": "../../../assets/uimpact_logo.png",
+        "short_desc": "An online learning and consulting platform targted to Social Organizations.",
+        "images": [
+            {
+                "image": "../../../assets/uimpact_logo.png",
+                "alt": "U-Impactify logo"
+            }
+        ],
+        "long_desc": "A web-app built by myself with a team of 6 developers. This online learning platform is something akin to the Udemy website, where users can register and select courses offered by our site. Most of the courses are be geared towards skills that would help Social Initiatives improve their operations and activities. In addition to that, users can register as consultants to offer their services to seeking organizations, or create courses for other users to take. Social Initiatives may also post volunteer/employment opportunities on our site as well.\n\nThis project was built with Java Spring Boot as the backend framework and ReactJS as the frontend framework. We used a PostgreSQL relational database to store our web app's information. I mainly worked on the backend and built APIs and services for the frontend team to use that would either create, modify, obtain, or remove records from the database.",
+        "link": "https://github.com/UTSCCSCC01/project-coding-lads"
+    },
+    {
+        "title": "Doodlejump",
+        "date": "Dec 2020",
+        "thumbnail": "../../../assets/doodlejump_start_copy.png",
+        "short_desc": "A MIPS coded assembly project that is based the classic Doodlejump game.",
+        "images": [
+            {
+                "image": "../../../assets/doodlejump_start.png",
+                "alt": "Start screen of doodlejump game"
+            },
+            {
+                "image": "../../../assets/doodlejump_instructions.png",
+                "alt": "Instructional guide of doodlejump game"
+            },
+            {
+                "image": "../../../assets/doodlejump_easy.png",
+                "alt": "Easy level of doodlejump game"
+            },
+            {
+                "image": "../../../assets/doodlejump_features.png",
+                "alt": "Bombs, boosts, and shields in doodlejump game"
+            },
+            {
+                "image": "../../../assets/doodlejump_end.png",
+                "alt": "End screen of doodlejump game"
+            },
+            {
+                "image": "../../../assets/doodlejump_medium.png",
+                "alt": "Medium level of doodlejump game"
+            },
+            {
+                "image": "../../../assets/doodlejump_shield.png",
+                "alt": "Shielded doodler in doodlejump game"
+            },
+            {
+                "image": "../../../assets/doodlejump_hard.png",
+                "alt": "Hard level of doodlejump game"
+            },
+            {
+                "image": "../../../assets/doodlejump_hard_bomb.png",
+                "alt": "Doodler close to bomb in doodlejump game"
+            }
+        ],
+        "long_desc": "A web-app built by myself with a team of 6 developers. This online learning platform is something akin to the Udemy website, where users can register and select courses offered by our site. Most of the courses are be geared towards skills that would help Social Initiatives improve their operations and activities. In addition to that, users can register as consultants to offer their services to seeking organizations, or create courses for other users to take. Social Initiatives may also post volunteer/employment opportunities on our site as well.\n\nThis project was built with Java Spring Boot as the backend framework and ReactJS as the frontend framework. We used a PostgreSQL relational database to store our web app's information. I mainly worked on the backend and built APIs and services for the frontend team to use that would either create, modify, obtain, or remove records from the database.",
+        "link": "https://github.com/MochiTarts/Doodlejump-CSCB58"
+    },
+    {
+        "title": "Android Shopping App",
+        "date": "Nov - Dec 2019",
+        "thumbnail": "../../../assets/androidapp_store.png",
+        "short_desc": "A simple functional shopping app made for Android phones.",
+        "images": [
+            {
+                "image": "../../../assets/androidapp_login.png",
+                "alt": "Login of android app"
+            },
+            {
+                "image": "../../../assets/androidapp_store.png",
+                "alt": "Store display of android app"
+            },
+            {
+                "image": "../../../assets/androidapp_cart.png",
+                "alt": "Customer's shopping cart of android app"
+            },
+            {
+                "image": "../../../assets/androidapp_checkout.png",
+                "alt": "Checkout screen of android app"
+            },
+            {
+                "image": "../../../assets/androidapp_admin.png",
+                "alt": "Admin screen of android app"
+            },
+            {
+                "image": "../../../assets/androidapp_employee.png",
+                "alt": "Employee screen of android app"
+            },
+            {
+                "image": "../../../assets/androidapp_restock.png",
+                "alt": "Restock screen of android app"
+            }
+        ],
+        "long_desc": "A web-app built by myself with a team of 6 developers. This online learning platform is something akin to the Udemy website, where users can register and select courses offered by our site. Most of the courses are be geared towards skills that would help Social Initiatives improve their operations and activities. In addition to that, users can register as consultants to offer their services to seeking organizations, or create courses for other users to take. Social Initiatives may also post volunteer/employment opportunities on our site as well.\n\nThis project was built with Java Spring Boot as the backend framework and ReactJS as the frontend framework. We used a PostgreSQL relational database to store our web app's information. I mainly worked on the backend and built APIs and services for the frontend team to use that would either create, modify, obtain, or remove records from the database.",
+        "link": "https://github.com/MochiTarts/CSCB07AndroidProject"
+    },
+    {
+        "title": "Mood",
+        "date": "Nov 2019",
+        "thumbnail": "../../../assets/mood.jpg",
+        "short_desc": "A sentiment analysis web app that will generate films, music, and gifs according to your mood.",
+        "images": [
+            {
+                "image": "../../../assets/mood.jpg",
+                "alt": "Landing page of mood web app"
+            },
+            {
+                "image": "../../../assets/mood_results.jpeg",
+                "alt": "Results page of a surprised mood"
+            },
+            {
+                "image": "../../../assets/mood_moreresults.jpeg",
+                "alt": "Full results page of a fearful mood"
+            }
+        ],
+        "long_desc": "A web-app built by myself with a team of 6 developers. This online learning platform is something akin to the Udemy website, where users can register and select courses offered by our site. Most of the courses are be geared towards skills that would help Social Initiatives improve their operations and activities. In addition to that, users can register as consultants to offer their services to seeking organizations, or create courses for other users to take. Social Initiatives may also post volunteer/employment opportunities on our site as well.\n\nThis project was built with Java Spring Boot as the backend framework and ReactJS as the frontend framework. We used a PostgreSQL relational database to store our web app's information. I mainly worked on the backend and built APIs and services for the frontend team to use that would either create, modify, obtain, or remove records from the database.",
+        "link": "https://devpost.com/software/mood-o67ce1"
+    },
+    {
+        "title": "Heir to the Throne",
+        "date": "Mar - Apr 2017",
+        "thumbnail": "../../../assets/game.JPG",
+        "short_desc": "A point-&-click adventure game made using JavaScript, sessionStorage, and HTML/CSS.",
+        "images": [
+            {
+                "image": "../../../assets/game.JPG",
+                "alt": "Opening page of Heir to the Throne"
+            }
+        ],
+        "long_desc": "A web-app built by myself with a team of 6 developers. This online learning platform is something akin to the Udemy website, where users can register and select courses offered by our site. Most of the courses are be geared towards skills that would help Social Initiatives improve their operations and activities. In addition to that, users can register as consultants to offer their services to seeking organizations, or create courses for other users to take. Social Initiatives may also post volunteer/employment opportunities on our site as well.\n\nThis project was built with Java Spring Boot as the backend framework and ReactJS as the frontend framework. We used a PostgreSQL relational database to store our web app's information. I mainly worked on the backend and built APIs and services for the frontend team to use that would either create, modify, obtain, or remove records from the database.",
+        "link": "https://github.com/MochiTarts/HeirToTheThrone"
+    }
+]

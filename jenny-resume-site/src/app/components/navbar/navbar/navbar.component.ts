@@ -29,6 +29,11 @@ export class NavbarComponent implements OnInit {
     el.scrollIntoView();
   }
 
+  gotoProjects() {
+    let el = document.getElementById("projects");
+    el.scrollIntoView();
+  }
+
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
     let element = document.querySelector('.nav');
