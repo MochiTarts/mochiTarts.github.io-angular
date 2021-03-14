@@ -60,6 +60,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   images: Array<any> = [];
   projectLongDesc: string;
   projectLink: string;
+  projectWebsite: string;
   projectTitle: string;
   projectTags: Array<any>;
 
@@ -82,14 +83,19 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     AOS.init({
-      delay: 300,
-      duration: 1000,
+      delay: 100,
+      duration: 1500,
       once: true,
       anchorPlacement: 'top-bottom',
     });
   }
 
   ngAfterViewInit(): void {
+  }
+
+  gotoAbout() {
+    let el = document.getElementById("about");
+    el.scrollIntoView();
   }
 
   doughnutChartData(data: Array<any>) {
@@ -112,9 +118,10 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.images = project.images;
     this.projectLongDesc = project.long_desc;
     this.projectLink = project.link;
+    this.projectWebsite = project.website;
     this.projectTitle = project.title;
     this.projectTags = project.tags;
-    this.modalService.open(projectContent, {ariaLabelledBy: 'modal-basic-title', backdrop: 'static', size: 'lg'}).result.then((result) => {
+    this.modalService.open(projectContent, {ariaLabelledBy: 'modal-basic-title', size: 'lg'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
       document.getElementById("modal-project-paragraph").innerHTML.replace(/\n/g, "<br />");
     }, (reason) => {

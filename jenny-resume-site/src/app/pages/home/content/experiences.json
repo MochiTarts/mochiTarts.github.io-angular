@@ -4,7 +4,7 @@
         "date": "Jan 2021 - Present",
         "company": "UTSC The Bridge",
         "points": [
-            "Took charge of a team of 4 developers taught them the overview of the web app's infrastructure in 4 days; explained to them how Django sends data from MongoDB to Angular for display and how to make APIs and services",
+            "Took charge of a team of 4 developers taught them the overview of the web app's infrastructure on the 1st week; explained to them how Django sends data from MongoDB to Angular for display and how to make APIs and services",
             "Implemented, tested, and deployed a temporary data collection page within tight timeline constraints, had to learn the basics of Nginx and Docker in 2 days",
             "Assisted with improving the project's foundational infrastrucsture and security, mainly with migrating over existing features",
             "Consistently provided updates to managers and stakeholders, and always modified the website according to changes in their requirements"
