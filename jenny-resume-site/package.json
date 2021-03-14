@@ -29,6 +29,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@ng-bootstrap/ng-bootstrap": "^9.0.2",
     "@ngmodule/material-carousel": "^0.6.0",
+    "angular-cli-ghpages": "^1.0.0-rc.1",
     "angular-responsive-carousel": "^2.0.2",
     "aos": "^2.3.4",
     "bootstrap": "^4.0.0",
