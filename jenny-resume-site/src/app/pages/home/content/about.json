@@ -3,24 +3,27 @@
         "id": "1",
         "title": "Hi! I am...",
         "points": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel congue velit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel congue velit."
+            "UofT Computer Science student specializing in the Software Engineering stream",
+            "Currently a full stack developer on the Find Dining Project at UTSC the BRIDGE",
+            "An aspiring full stack developer with an interest in machine learning, especially the subject of sentiment analysis"
         ]
     },
     {
         "id": "2",
         "title": "I can do...",
         "points": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel congue velit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel congue velit."
+            "Developing large, beautiful, and dynamic web or mobile applications for various projects",
+            "Working with a number of tools, frameworks, and databases. Though I can work full stack, I mainly specialize in backend development using frameworks like Java Spring and Python Django",
+            "A couple of minor projects in assembly and circuit design"
         ]
     },
     {
         "id": "3",
-        "title": "Other things I can do...",
+        "title": "I also do...",
         "points": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel congue velit.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel congue velit."
+            "Piano-performer and teacher with an ARCT certification from the Royal Conservatory of Music",
+            "Creative writing, visual arts, and music composition. I enjoy posting some of my works online",
+            "Proficient in Adobe Photoshop+Illustrator and FL Studio"
         ]
     }
 ]

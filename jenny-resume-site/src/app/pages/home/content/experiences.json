@@ -1,0 +1,33 @@
+[
+    {
+        "job_title": "Full Stack Developer",
+        "date": "Jan 2021 - Present",
+        "company": "UTSC The Bridge",
+        "points": [
+            "Took charge of a team of 4 developers taught them the overview of the web app's infrastructure in 4 days; explained to them how Django sends data from MongoDB to Angular for display and how to make APIs and services",
+            "Implemented, tested, and deployed a temporary data collection page within tight timeline constraints, had to learn the basics of Nginx and Docker in 2 days",
+            "Assisted with improving the project's foundational infrastrucsture and security, mainly with migrating over existing features",
+            "Consistently provided updates to managers and stakeholders, and always modified the website according to changes in their requirements"
+        ]
+    },
+    {
+        "job_title": "Quality & Automation Engineer",
+        "date": "Jan 2020 - Apr 2020",
+        "company": "Royal Bank of Canada",
+        "points": [
+            "Adapted to heavier workloads and tighter deadlines within one day after remote work began",
+            "Wrote test cases and automation scripts in LeanFT C# on the 1st week of being onboarded to the mortgage/credit API project, reducing the runtime of tests (when done manually) by 70%",
+            "Fixed unfamiliar technical difficulties within one hour through analysis and troubleshooting, took the initiative of asking mentor for support if the issue was far beyond scope of knowledge"
+        ]
+    },
+    {
+        "job_title": "Platform Development Associate",
+        "date": "Sept 2019 - Jan 2020",
+        "company": "Forvera Health",
+        "points": [
+            "Collaborated with tech and cross-functional teams to gather requirements and determine tech stacks for developing the health startup’s platform during 2 hour weekly meetings",
+            "Learned the basics of Django in 3 days with guidance from the CTO to start help building the backend infrastructure",
+            "Built a Python script which batch-books patients via SimplyBook API and extracts data for EMRs"
+        ]
+    }
+]
