@@ -145,11 +145,11 @@
     {
         "title": "Mood",
         "date": "Nov 2019",
-        "thumbnail": "../../../assets/mood.jpg",
+        "thumbnail": "../../../assets/mood.jpeg",
         "short_desc": "A sentiment analysis web app that will generate films, music, and gifs according to your mood.",
         "images": [
             {
-                "image": "../../../assets/mood.jpg",
+                "image": "../../../assets/mood.jpeg",
                 "alt": "Landing page of mood web app"
             },
             {
@@ -176,11 +176,11 @@
     {
         "title": "Old Portfolio Website",
         "date": "Sept 2019",
-        "thumbnail": "../../../assets/Portfolio_website.png",
+        "thumbnail": "../../../assets/Portfolio_website.jpeg",
         "short_desc": "The previous website I created to present my skills, projects, and work experience",
         "images": [
             {
-                "image": "../../../assets/Portfolio_website.png",
+                "image": "../../../assets/Portfolio_website.jpeg",
                 "alt": "Landing page of old portfolio website"
             }
         ],
@@ -195,11 +195,11 @@
     {
         "title": "Heir to the Throne",
         "date": "Mar 2017 - Apr 2017",
-        "thumbnail": "../../../assets/game.JPG",
+        "thumbnail": "../../../assets/game.jpeg",
         "short_desc": "A point-&-click adventure game made using JavaScript, sessionStorage, and HTML/CSS.",
         "images": [
             {
-                "image": "../../../assets/game.JPG",
+                "image": "../../../assets/game.jpeg",
                 "alt": "Opening page of Heir to the Throne"
             },
             {
