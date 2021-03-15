@@ -1,8 +1,12 @@
 <div class="header">
-    <div class="overlay">
+    <div class="overlay-header">
         <div class="title-wrapper">
-            <h1>{{ greeting }}</h1>
-            <h2>{{ slogan }}</h2>
+            <h1 class="ml1">{{ greeting }}</h1>
+            <h2 class="ml2">
+                <span class="text-wrapper">
+                    <span class="letters">{{ slogan }}</span>
+                </span>
+            </h2>
         </div>
         <div class="bounce">
             <a class="fa fa-arrow-down" (click)="gotoAbout()"></a>
@@ -22,7 +26,7 @@
     </div>
     <div class="about-me-container">
         <div class="row about-row">
-            <div class="col-md-4"  *ngFor="let section of about">
+            <div class="col-lg-4"  *ngFor="let section of about">
                 <h2>{{ section.title }}</h2>
                 <ul *ngFor="let point of section.points">
                     <li>{{ point }}</li>
@@ -40,10 +44,25 @@
     </div>
     <div class="skills-summary-container">
         <div class="row no-gutters skills-row" *ngFor="let skill of skillsData" data-aos="fade-up">
-            <div class="col-md-4" id="skillTitle">
+            <div class="col-lg-4" id="skillTitle">
                 <h2>{{ skill.title }}</h2>
             </div>
-            <div class="col-md-8">
+            <div class="col-lg-8" id="skillChart">
+                <div class="chart-wrapper">
+                    <canvas baseChart 
+                        [data]="doughnutChartData(skill.data)"
+                        [labels]="doughnutChartLabels(skill.data)"
+                        [chartType]="doughnutChartType"
+                        [options]="doughnutChartOptions"
+                        [plugins]="pluginLabels">
+                    </canvas>
+                </div>
+            </div>
+
+            <div class="col-lg-12" id="skillTitleSmaller">
+                <h2>{{ skill.title }}</h2>
+            </div>
+            <div class="col-lg-12" id="skillChartSmaller">
                 <div class="chart-wrapper">
                     <canvas baseChart 
                         [data]="doughnutChartData(skill.data)"
@@ -76,26 +95,12 @@
                 <mat-card-header>
                     <mat-card-title class="experience-title">{{ job.job_title }}</mat-card-title>
                 </mat-card-header>
-                <!-- <div mat-card-image>
-                    <div class="experience-project-image">
-                        <ngb-carousel [interval]="6000">
-                            <ng-template ngbSlide *ngFor="let image of workimages">
-                                <div class="experience-image-wrapper">
-                                    <img [src]="image.image" alt="image.alt">
-                                </div>
-                            </ng-template>
-                        </ngb-carousel>
-                    </div>
-                </div> -->
                 <mat-card-content class="experience-short-desc">
                     <h5><i>{{ job.date }}</i> | {{ job.company }}</h5>
                     <ul *ngFor="let point of job.points">
                         <li class="jobpoint">{{ point }}</li>
                     </ul>
                 </mat-card-content>
-                <!-- <mat-card-actions>
-                    <button mat-button class="experience-button">SEE MORE</button>
-                </mat-card-actions> -->
             </mat-card>
         </div>
     </div>
@@ -109,8 +114,8 @@
         <div class="underline"></div>
     </div>
     <div class="projects-summary-container">
-        <div class="row projects-row">
-            <div class="col-md-4" *ngFor="let project of projectsInfo">
+        <div class="row no-gutters projects-row">
+            <div class="col-lg-4" *ngFor="let project of projectsInfo">
                 <mat-card class="project-card mat-elevation-z8" data-aos="fade-up">
                     <mat-card-header>
                         <mat-card-title class="project-title">{{ project.title }}</mat-card-title>
@@ -133,52 +138,54 @@
 
 <span class="anchor" id="contact"></span>
 <div class="contact-container">
-    <div class="section-title" data-aos="fade-right">
-        <h1>{{ contactTitle }}</h1>
-        <div class="underline"></div>
-    </div>
     <div class="contact-form-container">
-        <iframe name="hiddenFrame" class="hide"></iframe>
-        <form class="gform" method="POST" target="hiddenFrame" action="https://script.google.com/macros/s/AKfycbzXNezqDS74_vHoSBN0ZLI9288mFFXwfepxKZXHokZ1dwceZJv5Xxju1yGyVI19zxGZ/exec">
-            <div id="thankyou_alert" class="alert alert-success" style="display: none;" role="alert">
-                <a class="close" aria-label="close" (click)="dismissAlert()">&times;</a>
-                Thanks for contacting me! I will get back to you soon!
-            </div>
-
-            <div class="form">
-                <div class="form-group">
-                    <label for="name">* Name: </label>
-                    <input id="name" name="name" class="form-control" required placeholder="Your name" />
+        <div class="section-title" data-aos="fade-right">
+            <h1>{{ contactTitle }}</h1>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-form-container">
+            <iframe name="hiddenFrame" class="hide"></iframe>
+            <form class="gform" method="POST" target="hiddenFrame" action="https://script.google.com/macros/s/AKfycbzXNezqDS74_vHoSBN0ZLI9288mFFXwfepxKZXHokZ1dwceZJv5Xxju1yGyVI19zxGZ/exec">
+                <div id="thankyou_alert" class="alert alert-success" role="alert">
+                    <a class="close" aria-label="close" (click)="dismissAlert()">&times;</a>
+                    Thank you for reaching out! I'll get back to you as soon as possible!
                 </div>
     
-                <div class="form-group">
-                    <label for="message">* Message: </label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        class="form-control"
-                        rows="10"
-                        required
-                        placeholder="Your message"
-                    ></textarea>
+                <div class="form">
+                    <div class="form-group">
+                        <label for="name">* Name: </label>
+                        <input id="name" name="name" class="form-control" required placeholder="Your name" />
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="message">* Message: </label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            class="form-control"
+                            rows="10"
+                            required
+                            placeholder="Your message"
+                        ></textarea>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">* Email Address:</label>
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            class="form-control"
+                            value=""
+                            required
+                            placeholder="yourName@email.com"
+                        />
+                    </div>
                 </div>
-    
-                <div class="form-group">
-                    <label for="email">* Email Address:</label>
-                    <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        class="form-control"
-                        value=""
-                        required
-                        placeholder="yourName@email.com"
-                    />
-                </div>
-            </div>
-            <button class="form-button" mat-raised-button type="submit" (click)="sendMail()">Send</button>
-            <button class="form-button" mat-raised-button type="reset">Clear</button>
-        </form>
+                <button class="form-button" mat-raised-button type="submit" (click)="sendMail()">Send</button>
+                <button class="form-button" mat-raised-button type="reset">Clear</button>
+            </form>
+        </div>
     </div>
 </div>
 

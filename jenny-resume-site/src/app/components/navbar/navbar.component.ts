@@ -11,6 +11,14 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void { }
 
+  openNav() {
+    document.getElementById("myNav").style.width = "50%";
+  }
+
+  closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+
   gotoTop() {
     window.scroll({
       top: 0,
@@ -40,6 +48,46 @@ export class NavbarComponent implements OnInit {
   }
 
   gotoContact() {
+    let el = document.getElementById("contact");
+    el.scrollIntoView();
+  }
+
+  //Mobile versions of go to section functions
+  gotoTopMobile() {
+    document.getElementById("myNav").style.width = "0%";
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    });
+  }
+
+  gotoAboutMobile() {
+    document.getElementById("myNav").style.width = "0%";
+    let el = document.getElementById("about");
+    el.scrollIntoView();
+  }
+
+  gotoSkillsMobile() {
+    document.getElementById("myNav").style.width = "0%";
+    let el = document.getElementById("skills");
+    el.scrollIntoView();
+  }
+
+  gotoProjectsMobile(){
+    document.getElementById("myNav").style.width = "0%";
+    let el = document.getElementById("projects");
+    el.scrollIntoView();
+  }
+
+  gotoExperiencesMobile() {
+    document.getElementById("myNav").style.width = "0%";
+    let el = document.getElementById("experiences");
+    el.scrollIntoView();
+  }
+
+  gotoContactMobile() {
+    document.getElementById("myNav").style.width = "0%";
     let el = document.getElementById("contact");
     el.scrollIntoView();
   }

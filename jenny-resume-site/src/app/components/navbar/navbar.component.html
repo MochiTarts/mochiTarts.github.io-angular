@@ -18,3 +18,16 @@
         <a class="nav-link" (click)="gotoContact()">Contact</a>
     </span>
 </nav>
+
+<span class="hamburger" (click)="openNav()">&#9776;</span>
+<nav id="myNav" class="overlay">
+    <a class="closebtn" (click)="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <a (click)="gotoTopMobile()">Home</a>
+        <a (click)="gotoAboutMobile()">About</a>
+        <a (click)="gotoSkillsMobile">Skills</a>
+        <a (click)="gotoExperiencesMobile()">Experience</a>
+        <a (click)="gotoProjectsMobile()">Projects</a>
+        <a (click)="gotoContactMobile()">Contact</a>
+    </div>
+</nav>

@@ -1,1 +1,60 @@
-@import 'src/styles.scss'
+@import 'src/styles.scss';
+
+@media screen and (max-width: 555px),
+    screen and (max-width: 568px) and (orientation: landscape) {
+
+.nav {
+    display: none;
+}
+
+.hamburger {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 10px;
+    z-index: 1;
+    font-size: 30px;
+    color: white;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 30px;
+}
+
+}

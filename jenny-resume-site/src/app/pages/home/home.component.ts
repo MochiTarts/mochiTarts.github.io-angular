@@ -4,11 +4,14 @@ import * as pluginLabels from 'chartjs-plugin-labels';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import * as anime from 'animejs';
+declare var anime: any;
 
 import about from '../home/content/about.json';
 import skills from '../home/content/skills.json';
 import projects from '../home/content/projects.json';
 import experiences from '../home/content/experiences.json';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -91,6 +94,45 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    //Greeting Text
+    var textWrapper = document.querySelector('.ml1');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    
+    anime.timeline({loop: false})
+    .add({
+      targets: '.ml1 .letter',
+      scale: [4,1],
+      opacity: [0,1],
+      translateZ: 0,
+      easing: "easeOutExpo",
+      duration: 1500,
+      delay: (el, i) => 70*i,
+      complete: this.deleteSpanml1
+    })
+
+    //Slogan Text
+    var textWrapper = document.querySelector('.ml2 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    
+    anime.timeline({loop: false})
+    .add({
+      targets: '.ml2 .letter',
+      translateY: ["1.1em", 0],
+      translateZ: 0,
+      duration: 750,
+      delay: (el, i) => 50 * i,
+      complete: this.deleteSpanml2
+    })
+  }
+
+  deleteSpanml1() {
+    var textWrapper = document.querySelector('.ml1');
+    textWrapper.innerHTML = textWrapper.textContent.replace("<span class='letter'>", "").replace("</span>", "");
+  }
+
+  deleteSpanml2() {
+    var textWrapper = document.querySelector('.ml2 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace("<span class='letter'>", "").replace("</span>", "");
   }
 
   gotoAbout() {
@@ -148,12 +190,15 @@ export class HomeComponent implements OnInit, AfterViewInit {
     var message = (<HTMLInputElement>document.getElementById('message')).value
     var email = (<HTMLInputElement>document.getElementById('email')).value
     if (name.length > 0 && name.length > 0 && email.length > 0) {
-      document.getElementById('thankyou_alert').style.display = 'block';
+      document.getElementById('thankyou_alert').style.opacity = '1';
+      setTimeout(function() {
+        document.getElementById('thankyou_alert').style.opacity = '0';
+      }, 5000)
     }
   }
 
   dismissAlert() {
-    document.getElementById('thankyou_alert').style.display = 'none';
+    document.getElementById('thankyou_alert').style.opacity = '0';
   }
 
 }

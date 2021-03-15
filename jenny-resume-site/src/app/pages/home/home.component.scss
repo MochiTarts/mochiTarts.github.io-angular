@@ -1,1 +1,106 @@
-@import 'src/styles.scss'
+@import 'src/styles.scss';
+
+@media screen and (max-width: 991px) {
+
+/* ABOUT */
+.about-row {
+    gap: 25px;
+}
+
+.about-row li {
+    float: left;
+}
+/* ABOUT */
+    
+/* SKILLS */
+#skillTitle {
+    display: none;
+}
+
+#skillChart {
+    display: none;
+}
+
+#skillTitleSmaller {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#skillTitleSmaller h2 {
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+	font-weight: bolder;
+	font-size: 30px;
+}
+
+#skillChartSmaller {
+    display: block;
+}
+/* SKILLS */
+
+/* PROJECTS */
+.project-card {
+    margin: 0px;
+}
+/* PROJECTS */
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+/* ABOUT */
+.about-me-container {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.portrait-container {
+    width: 250px;
+    height: 250px;
+}
+/* ABOUT */
+
+/* SKILLS */
+.skills-summary-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.skills-row iframe {
+    height: 300px;
+}
+/* SKILLS */
+
+/* EXPERIENCES */
+.experiences-summary-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.experience-short-desc {
+	margin: 5px;
+}
+/* EXPERIENCES */
+
+/* PROJECTS */
+.projects-summary-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/* PROJECTS */
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+ /* EXPERIENCES */
+.experience-short-desc {
+	margin: 0px;
+}
+/* EXPERIENCES */   
+
+}
