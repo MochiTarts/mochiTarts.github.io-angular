@@ -1,5 +1,9 @@
 @import 'src/styles.scss';
 
+#myNav {
+    display: none;
+}
+
 @media screen and (max-width: 555px),
     screen and (max-width: 568px) and (orientation: landscape) {
 
