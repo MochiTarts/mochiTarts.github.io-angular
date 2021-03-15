@@ -1,6 +1,55 @@
+.nav {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
 #myNav {
     display: none;
 }
+
+.hamburger {
+    display: none;
+}
+
+.nav-inverse {
+    background-color: #333;
+	color: white;
+}
+
+.nav-links {
+    width: 100%;
+}
+
+.nav-item {
+    margin: 0px 10px;
+}
+
+.nav-inverse .nav-link:hover {
+	border-bottom: solid 1px white;
+    cursor: pointer;
+}
+
+.nav-link {
+    color: black;
+    border-bottom: solid 1px transparent;
+	transition: 0.5s;
+    text-decoration: none;
+    padding: 0;
+}
+
+.nav-link:hover {
+	border-bottom: solid 2px black;
+    cursor: pointer;
+}
+
+
 
 @media screen and (max-width: 555px),
     screen and (max-width: 568px) and (orientation: landscape) {
@@ -17,6 +66,10 @@
     z-index: 1;
     font-size: 30px;
     color: white;
+}
+
+#myNav {
+    display: block;
 }
 
 .overlay {

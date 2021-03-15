@@ -1,0 +1,56 @@
+footer {
+    height: 250px;
+    background: #333;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 100px;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer p {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.footer-container {
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.footer-underline {
+    border: solid white 1px;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.icons {
+    color: white;
+    transition: all 0.2s ease-in-out;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.icons:hover {
+    color: pink;
+}
+
+.footer-final-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+}
