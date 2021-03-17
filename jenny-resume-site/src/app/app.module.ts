@@ -15,6 +15,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { NgxSpinnerModule } from "ngx-spinner";
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatIconModule,
     MatCardModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    LazyLoadImageModule,
+    NgxSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'bootstrap/dist/css/bootstrap-grid.min.css';
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+    -webkit-overflow-scrolling: touch;
+}
 
 /* GLOBALS */
 html, body {
@@ -12,6 +15,7 @@ html, body {
 	height: 100%;
 	margin: 0;
 	font-size: 100%;
+	-webkit-overflow-scrolling: touch;
 	scroll-behavior: smooth;
 }
 
@@ -58,6 +62,7 @@ button:focus {
 /* Greeting */
 .ml1 {
 	position: relative;
+	opacity: 0;
 }
 
 .ml1 .text-wrapper {
@@ -75,6 +80,7 @@ button:focus {
 /* Slogan */
 .ml2 {
     position: relative;
+	opacity: 0;
 }
   
 .ml2 .text-wrapper {

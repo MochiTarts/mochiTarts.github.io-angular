@@ -1,4 +1,5 @@
-<div class="header">
+<section class="anchor" id="header"></section>
+<div class="header" [lazyLoad]="'../../../assets/header.jpeg'">
     <div class="overlay-header">
         <div class="title-wrapper">
             <h1 class="ml1">{{ greeting }}</h1>
@@ -21,7 +22,7 @@
         <div class="underline"></div>
     </div>
     <div class="portrait">
-        <div class="portrait-container">
+        <div class="portrait-container" [lazyLoad]="'../../../assets/portraitme.jpeg'">
         </div>
     </div>
     <div class="about-me-container">
@@ -78,7 +79,7 @@
             <div class="resumeTitle">
                 <h1>{{ resumeTitle }}</h1>
             </div>
-            <iframe src="https://drive.google.com/file/d/1_1Q_MPlBOdFIt2ee6qK9E5ktMwaALlPg/preview" width="100%" height="500px"></iframe>
+            <iframe loading="lazy" src="https://drive.google.com/file/d/1_1Q_MPlBOdFIt2ee6qK9E5ktMwaALlPg/preview" width="100%" height="500px"></iframe>
         </div>
     </div>
 </div>
@@ -102,6 +103,18 @@
                     </ul>
                 </mat-card-content>
             </mat-card>
+
+            <mat-card class="experience-card-mobile mat-elevation-z8" data-aos="fade-up" *ngFor="let job of experiencesInfo">
+                <mat-card-header>
+                    <mat-card-title class="experience-title">{{ job.job_title }}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content class="experience-short-desc">
+                    <h6><i>{{ job.date }}</i> | {{ job.company }}</h6>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-button class="experience-button" (click)="openJob(experienceContent, job)">SEE MORE</button>
+                </mat-card-actions>
+            </mat-card>
         </div>
     </div>
 </div>
@@ -121,7 +134,7 @@
                         <mat-card-title class="project-title">{{ project.title }}</mat-card-title>
                     </mat-card-header>
                     <div mat-card-image class="project-image-container">
-                        <img class="project-image" src="{{ project.thumbnail }}">
+                        <img class="project-image" src="{{ project.thumbnail }}" [lazyLoad]="project.thumbnail">
                     </div>
                     <mat-card-content class="project-short-desc">
                         <h5>{{ project.date }}</h5>
@@ -144,7 +157,7 @@
             <div class="underline"></div>
         </div>
         <div class="contact-form-container">
-            <iframe name="hiddenFrame" class="hide"></iframe>
+            <iframe loading="lazy" name="hiddenFrame" class="hide"></iframe>
             <form class="gform" method="POST" target="hiddenFrame" action="https://script.google.com/macros/s/AKfycbzXNezqDS74_vHoSBN0ZLI9288mFFXwfepxKZXHokZ1dwceZJv5Xxju1yGyVI19zxGZ/exec">
                 <div id="thankyou_alert" class="alert alert-success" role="alert">
                     <a class="close" aria-label="close" (click)="dismissAlert()">&times;</a>
@@ -191,6 +204,21 @@
 
 
 
+<ng-template #experienceContent let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">{{ jobTitle }}</h4>
+        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <h5><i>{{ jobDate }}</i> | {{ jobCompany }}</h5>
+        <ul *ngFor="let point of jobPoints">
+            <li class="jobpoint">{{ point }}</li>
+        </ul>
+    </div>
+</ng-template>
+
 <ng-template #projectContent let-modal>
     <div class="modal-header">
         <h4 class="modal-title" id="modal-basic-title">{{ projectTitle }}</h4>
@@ -203,7 +231,7 @@
             <ngb-carousel [interval]="6000">
                 <ng-template ngbSlide *ngFor="let image of images">
                     <div class="modal-image-wrapper">
-                        <img [src]="image.image" alt="image.alt">
+                        <img [src]="image.image" alt="image.alt" [lazyLoad]="image.image">
                     </div>
                 </ng-template>
             </ngb-carousel>

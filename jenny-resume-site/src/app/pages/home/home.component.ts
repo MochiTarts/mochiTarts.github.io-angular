@@ -2,16 +2,17 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import Chart, { ChartOptions, ChartType, ChartColor } from 'chart.js';
 import * as pluginLabels from 'chartjs-plugin-labels';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { NgxSpinnerService } from "ngx-spinner";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import * as anime from 'animejs';
+import smoothscroll from 'smoothscroll-polyfill';
 declare var anime: any;
 
 import about from '../home/content/about.json';
 import skills from '../home/content/skills.json';
 import projects from '../home/content/projects.json';
 import experiences from '../home/content/experiences.json';
-import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -29,7 +30,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
   skillsTitle: string = "Skills";
   skillsCategory: string = "Languages";
   skillsData: Array<any>;
-  //doughnutChartLabels: Label[] = [];
   pluginLabels: Array<any> = [pluginLabels]
   doughnutChartType: ChartType = 'doughnut';
   doughnutChartColours: ChartColor = [
@@ -57,6 +57,13 @@ export class HomeComponent implements OnInit, AfterViewInit {
   };
   resumeTitle: string = "Resume";
 
+  experiencesTitle: string = "Experience";
+  experiencesInfo: Array<any>;
+  jobTitle: string;
+  jobDate: string;
+  jobCompany: string;
+  jobPoints: Array<any>;
+
   projectsTitle: string = "Projects";
   closeResult = '';
   projectsInfo: Array<any>;
@@ -67,12 +74,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
   projectTitle: string;
   projectTags: Array<any>;
 
-  experiencesTitle: string = "Experience";
-  experiencesInfo: Array<any>;
-
   contactTitle: string = "Contact Me";
 
-  constructor(private modalService: NgbModal) {
+  constructor(private modalService: NgbModal, private spinner: NgxSpinnerService) {
     this.about = about;
 
     this.skillsData = skills;
@@ -82,47 +86,59 @@ export class HomeComponent implements OnInit, AfterViewInit {
     this.projectsInfo = projects;
 
     this.experiencesInfo = experiences;
+
+    this.spinner.show();
   }
 
   ngOnInit(): void {
-    AOS.init({
-      delay: 100,
-      duration: 1500,
-      once: true,
-      anchorPlacement: 'top-bottom',
-    });
+    smoothscroll.polyfill();
   }
 
   ngAfterViewInit(): void {
-    //Greeting Text
-    var textWrapper = document.querySelector('.ml1');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    
-    anime.timeline({loop: false})
-    .add({
-      targets: '.ml1 .letter',
-      scale: [4,1],
-      opacity: [0,1],
-      translateZ: 0,
-      easing: "easeOutExpo",
-      duration: 1500,
-      delay: (el, i) => 70*i,
-      complete: this.deleteSpanml1
-    })
+    setTimeout(() => {
+      this.spinner.hide();
 
-    //Slogan Text
-    var textWrapper = document.querySelector('.ml2 .letters');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-    
-    anime.timeline({loop: false})
-    .add({
-      targets: '.ml2 .letter',
-      translateY: ["1.1em", 0],
-      translateZ: 0,
-      duration: 750,
-      delay: (el, i) => 50 * i,
-      complete: this.deleteSpanml2
-    })
+      var greeting = <HTMLElement>document.querySelector('.ml1');
+      greeting.style.opacity = '1';
+      var slogan = <HTMLInputElement>document.querySelector('.ml2');
+      slogan.style.opacity = '1';
+      //Greeting Text
+      var textWrapper = document.querySelector('.ml1');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+      
+      anime.timeline({loop: false})
+      .add({
+        targets: '.ml1 .letter',
+        scale: [4,1],
+        opacity: [0,1],
+        translateZ: 0,
+        easing: "easeOutExpo",
+        duration: 1500,
+        delay: (el, i) => 70*i,
+        complete: this.deleteSpanml1
+      })
+
+      //Slogan Text
+      var textWrapper = document.querySelector('.ml2 .letters');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+      
+      anime.timeline({loop: false})
+      .add({
+        targets: '.ml2 .letter',
+        translateY: ["1.1em", 0],
+        translateZ: 0,
+        duration: 750,
+        delay: (el, i) => 50 * i,
+        complete: this.deleteSpanml2
+      })
+
+      AOS.init({
+        delay: 100,
+        duration: 1500,
+        once: true,
+        anchorPlacement: 'top-bottom',
+      });
+    }, 1500)
   }
 
   deleteSpanml1() {
@@ -137,7 +153,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   gotoAbout() {
     let el = document.getElementById("about");
-    el.scrollIntoView();
+    el.scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 
   doughnutChartData(data: Array<any>) {
@@ -154,6 +172,19 @@ export class HomeComponent implements OnInit, AfterViewInit {
       labels.push(element['name'])
     })
     return labels
+  }
+
+  openJob(experienceContent, job) {
+    this.jobTitle = job.job_title;
+    this.jobDate = job.date;
+    this.jobCompany = job.company;
+    this.jobPoints = job.points;
+    this.modalService.open(experienceContent, {ariaLabelledBy: 'modal-basic-title', size: 'lg'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+      document.getElementById("modal-project-paragraph").innerHTML.replace(/\n/g, "<br />");
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
   }
 
   open(projectContent, project) {

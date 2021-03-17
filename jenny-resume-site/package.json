@@ -37,9 +37,12 @@
     "chart.js": "^2.9.4",
     "chartjs-plugin-labels": "^1.1.0",
     "jquery": "^3.3.1",
+    "ng-lazyload-image": "^9.1.0",
     "ng2-charts": "^2.4.2",
     "ngx-bootstrap": "^6.2.0",
+    "ngx-spinner": "^10.0.1",
     "rxjs": "~6.5.4",
+    "smoothscroll-polyfill": "^0.4.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
