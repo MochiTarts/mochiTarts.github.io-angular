@@ -69,7 +69,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
         behavior: 'smooth'
       })
     } else {
-      this.router.navigate(['skills']).then(() => {
+      this.router.navigate(['/skills']).then(() => {
         window.location.reload();
       });
     }
@@ -152,7 +152,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
         behavior: 'smooth'
       })
     } else {
-      this.router.navigate(['skills']).then(() => {
+      this.router.navigate(['/skills']).then(() => {
         window.location.reload();
       });
     }
