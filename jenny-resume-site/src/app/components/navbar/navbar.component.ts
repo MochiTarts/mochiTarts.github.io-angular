@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import smoothscroll from 'smoothscroll-polyfill';
 
 @Component({
@@ -8,7 +9,7 @@ import smoothscroll from 'smoothscroll-polyfill';
 })
 export class NavbarComponent implements OnInit, AfterViewInit {
 
-  constructor() { }
+  constructor(private router: Router, private active: ActivatedRoute) { }
 
   ngOnInit(): void {
     smoothscroll.polyfill();
@@ -22,7 +23,7 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   }
 
   openNav() {
-    document.getElementById("myNav").style.width = "50%";
+    document.getElementById("myNav").style.width = "100%";
   }
 
   closeNav() {
@@ -30,39 +31,76 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   }
 
   gotoTop() {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    });
+    if (this.router.url == '/') {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    } else {
+      this.router.navigate(['/']).then(() => {
+        window.location.reload();
+      });
+    }
   }
 
   gotoAbout() {
-    let el = document.getElementById("about");
-    el.scrollIntoView({
-      behavior: 'smooth'
-    });
+    if (this.router.url == '/') {
+      let el = document.getElementById("about");
+      el.scrollIntoView({
+        behavior: 'smooth'
+      });
+    } else {
+      this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+      this.router.navigate(['/']).then(() => {
+        let el = document.getElementById("about");
+        el.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    }
   }
 
   gotoSkills() {
-    let el = document.getElementById("skills");
-    el.scrollIntoView({
-      behavior: 'smooth'
-    });
+    if (this.router.url == '/skills') {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      })
+    } else {
+      this.router.navigate(['skills']).then(() => {
+        window.location.reload();
+      });
+    }
   }
 
   gotoProjects() {
-    let el = document.getElementById("projects");
-    el.scrollIntoView({
-      behavior: 'smooth'
-    });
+    if (this.router.url == '/projects') {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      })
+    } else {
+      this.router.navigate(['/projects']).then(() => {
+        window.location.reload();
+      });
+    }
   }
 
   gotoExperiences() {
-    let el = document.getElementById("experiences");
-    el.scrollIntoView({
-      behavior: 'smooth'
-    });
+    if (this.router.url == '/experience') {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      })
+    } else {
+      this.router.navigate(['/experience']).then(() => {
+        window.location.reload();
+      });
+    }
   }
 
   gotoContact() {
@@ -75,43 +113,79 @@ export class NavbarComponent implements OnInit, AfterViewInit {
   //Mobile versions of go to section functions
   gotoTopMobile() {
     document.getElementById("myNav").style.width = "0%";
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    });
+    if (this.router.url == '/') {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    } else {
+      this.router.navigate(['/']).then(() => {
+        window.location.reload();
+      });
+    }
   }
 
   gotoAboutMobile() {
     document.getElementById("myNav").style.width = "0%";
-    let el = document.getElementById("about");
-    el.scrollIntoView({
-      behavior: 'smooth'
-    });
+    if (this.router.url == '/') {
+      let el = document.getElementById("about");
+      el.scrollIntoView({
+        behavior: 'smooth'
+      });
+    } else {
+      this.router.navigate(['/']).then(() => {
+        let el = document.getElementById("about");
+        el.scrollIntoView({
+          behavior: 'smooth'
+        });
+      })
+    }
   }
 
   gotoSkillsMobile() {
     document.getElementById("myNav").style.width = "0%";
-    let el = document.getElementById("skills");
-    el.scrollIntoView({
-      behavior: 'smooth'
-    });
+    if (this.router.url == '/skills') {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      })
+    } else {
+      this.router.navigate(['skills']).then(() => {
+        window.location.reload();
+      });
+    }
   }
 
   gotoProjectsMobile(){
     document.getElementById("myNav").style.width = "0%";
-    let el = document.getElementById("projects");
-    el.scrollIntoView({
-      behavior: 'smooth'
-    });
+    if (this.router.url == '/projects') {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      })
+    } else {
+      this.router.navigate(['/projects']).then(() => {
+        window.location.reload();
+      });
+    }
   }
 
   gotoExperiencesMobile() {
     document.getElementById("myNav").style.width = "0%";
-    let el = document.getElementById("experiences");
-    el.scrollIntoView({
-      behavior: 'smooth'
-    });
+    if (this.router.url == '/experience') {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      })
+    } else {
+      this.router.navigate(['/experience']).then(() => {
+        window.location.reload();
+      });
+    }
   }
 
   gotoContactMobile() {

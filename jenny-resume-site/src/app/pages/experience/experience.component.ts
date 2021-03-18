@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import Chart from 'chart.js';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import { NgxSpinnerService } from "ngx-spinner";
 import AOS from 'aos';
@@ -8,25 +7,26 @@ import * as anime from 'animejs';
 import smoothscroll from 'smoothscroll-polyfill';
 declare var anime: any;
 
-import about from '../home/content/about.json';
+import experiences from './content/experiences.json';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-experience',
+  templateUrl: './experience.component.html',
+  styleUrls: ['./experience.component.scss']
 })
-export class HomeComponent implements OnInit, AfterViewInit {
-
-  greeting: string = "Hello, I'm Jenny Yu";
-  slogan: string = "A self-driving computer science student at the University of Toronto";
-
-  aboutTitle: string = "About";
-  about: Array<any>;
+export class ExperienceComponent implements OnInit, AfterViewInit {
+  experiencesHeader: string = "My Work Experience";
+  experiencesSlogan: string = "A detailing of the past positions I've held and what I've gained from them"
+  experiencesTitle: string = "Experience";
+  experiencesInfo: Array<any>;
+  jobTitle: string;
+  jobDate: string;
+  jobCompany: string;
+  jobPoints: Array<any>;
+  closeResult = '';
 
   constructor(private modalService: NgbModal, private spinner: NgxSpinnerService) {
-    this.about = about;
-    Chart.defaults.global.defaultColor = '#fff';
-
+    this.experiencesInfo = experiences;
     this.spinner.show();
   }
 
@@ -91,11 +91,27 @@ export class HomeComponent implements OnInit, AfterViewInit {
     textWrapper.innerHTML = textWrapper.textContent.replace("<span class='letter'>", "").replace("</span>", "");
   }
 
-  gotoAbout() {
-    let el = document.getElementById("about");
-    el.scrollIntoView({
-      behavior: 'smooth'
+  openJob(experienceContent, job) {
+    this.jobTitle = job.job_title;
+    this.jobDate = job.date;
+    this.jobCompany = job.company;
+    this.jobPoints = job.points;
+    this.modalService.open(experienceContent, {ariaLabelledBy: 'modal-basic-title', size: 'lg'}).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+      document.getElementById("modal-project-paragraph").innerHTML.replace(/\n/g, "<br />");
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
+  }
+
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return `with: ${reason}`;
+    }
   }
 
 }

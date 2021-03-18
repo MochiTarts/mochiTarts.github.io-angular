@@ -1,3 +1,10 @@
+.section-title h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
 /* HEADER */
 .header {
     background-image: url('/assets/header.jpeg');
@@ -82,80 +89,107 @@
 }
 /* HEADER */
 
-/* ABOUT */
-.about-container {
+/* SKILLS */
+.skills-container {
     height: fit-content;
-    //background-color: #f4f4f4;
-	//background-color: #B9E9C9;
 	background-color: #73d393;
 	color: white;
-}
-
-.section-title h1 {
-    margin: 0;
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-}
-
-.underline {
-    //border-bottom: 3px solid #d48c7d;
-	border-bottom: 3px solid #333;
-    width: 100px;
-    padding-top: 25px;
-    margin: auto;
-}
-
-.portrait {
-    width: 100%;
-}
-
-.portrait-container {
-    width: 300px;
-    height: 300px;
-    max-width: 300px;
-    max-height: 300px;
-    border-radius: 50%;
-    background-image: url('/assets/portraitme.jpeg');
-    background-size: cover;
-    background-position: 60%;
-    margin: auto;
-}
-
-.about-row {
-    max-width: 1100px;
-}
-
-.about-row li {
-	list-style-type: square;
-	font-size: 15px;
-}
-
-.about-me-container {
-    margin-top: 50px;
     padding-bottom: 50px;
+}
+
+.skills-summary-container {
     margin-left: 75px;
     margin-right: 75px;
 }
 
-.about-me-container h2 {
+.skills-row {
+    max-width: 700px;
+    max-width: 900px;
+    padding: 30px 0px;
+}
+
+#skillTitle h2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+	font-weight: bolder;
+	font-size: 30px;
+}
+
+#skillTitleSmaller {
+    display: none;
+}
+
+.chart-wrapper {
+    height: 350px;
+}
+
+#skillChartSmaller {
+    display: none;
+}
+
+.resumeTitle {
+    margin: 0 0 10px 0;
+    top: 0;
+    width: 100%;
+}
+
+.resumeTitle h1 {
     text-align: center;
 	font-weight: bolder;
 }
-/* ABOUT */
-
+/* SKILLS */
 
 
 @media screen and (max-width: 991px) {
-
-/* ABOUT */
-.about-row .col-lg-4 {
-    margin-bottom: 25px;
+    
+/* SKILLS */
+#skillTitle {
+    display: none;
 }
 
-.about-row li {
-    float: left;
+#skillChart {
+    display: none;
 }
-/* ABOUT */
+
+#skillTitleSmaller {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#skillTitleSmaller h2 {
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#skillChartSmaller {
+    display: block;
+}
+/* SKILLS */
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+/* SKILLS */
+.skills-summary-container {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.skills-row iframe {
+    height: 300px;
+}
+/* SKILLS */
 
 }

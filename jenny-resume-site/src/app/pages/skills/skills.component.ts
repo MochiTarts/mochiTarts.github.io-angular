@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import Chart from 'chart.js';
-import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import Chart, { ChartOptions, ChartType, ChartColor } from 'chart.js';
+import * as pluginLabels from 'chartjs-plugin-labels';
 import { NgxSpinnerService } from "ngx-spinner";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -8,23 +8,49 @@ import * as anime from 'animejs';
 import smoothscroll from 'smoothscroll-polyfill';
 declare var anime: any;
 
-import about from '../home/content/about.json';
+import skills from './content/skills.json';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-skills',
+  templateUrl: './skills.component.html',
+  styleUrls: ['./skills.component.scss']
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class SkillsComponent implements OnInit, AfterViewInit {
+  skillsHeader: string = "My Skills"
+  skillsSlogan: string = "A summary of what I can do"
+  skillsTitle: string = "Skills";
+  skillsCategory: string = "Languages";
+  skillsData: Array<any>;
+  pluginLabels: Array<any> = [pluginLabels]
+  doughnutChartType: ChartType = 'doughnut';
+  doughnutChartColours: ChartColor = [
+    "#fff"
+  ]
+  doughnutChartOptions: ChartOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      labels: [
+        {
+          render: 'percentage',
+          precision: 2,
+          fontColor: '#fff'
+        }
+      ],
+    },
+    legend: {
+      display: true,
+      labels: {
+        fontColor: '#fff',
+        fontSize: 15
+      }
+    }
+  };
+  resumeTitle: string = "Resume";
 
-  greeting: string = "Hello, I'm Jenny Yu";
-  slogan: string = "A self-driving computer science student at the University of Toronto";
-
-  aboutTitle: string = "About";
-  about: Array<any>;
-
-  constructor(private modalService: NgbModal, private spinner: NgxSpinnerService) {
-    this.about = about;
+  constructor(private spinner: NgxSpinnerService) {
+    this.skillsData = skills;
+    Chart.plugins.register;
     Chart.defaults.global.defaultColor = '#fff';
 
     this.spinner.show();
@@ -91,11 +117,20 @@ export class HomeComponent implements OnInit, AfterViewInit {
     textWrapper.innerHTML = textWrapper.textContent.replace("<span class='letter'>", "").replace("</span>", "");
   }
 
-  gotoAbout() {
-    let el = document.getElementById("about");
-    el.scrollIntoView({
-      behavior: 'smooth'
+  doughnutChartData(data: Array<any>) {
+    var levels = []
+    data.forEach(element => {
+      levels.push(element['grade'])
     });
+    return [levels]
+  }
+
+  doughnutChartLabels(data: Array<any>) {
+    var labels = []
+    data.forEach(element => {
+      labels.push(element['name'])
+    })
+    return labels
   }
 
 }
