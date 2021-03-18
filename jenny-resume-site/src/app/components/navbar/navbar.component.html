@@ -3,13 +3,13 @@
         <a class="nav-link" (click)="gotoTop()">Home</a>
     </span>
     <span class="nav-item">
-        <a class="nav-link" (click)="gotoSkills()">Skills</a>
+        <a class="nav-link" routerLink="/skills">Skills</a>
     </span>
     <span class="nav-item">
-        <a class="nav-link" (click)="gotoExperiences()">Experience</a>
+        <a class="nav-link" routerLink="experience">Experience</a>
     </span>
     <span class="nav-item">
-        <a class="nav-link" (click)="gotoProjects()">Projects</a>
+        <a class="nav-link" routerLink="projects">Projects</a>
     </span>
     <span class="nav-item">
         <a class="nav-link" (click)="gotoContact()">Contact</a>
@@ -21,9 +21,9 @@
     <a class="closebtn" (click)="closeNav()">&times;</a>
     <div class="overlay-content">
         <a (click)="gotoTopMobile()">Home</a>
-        <a (click)="gotoSkillsMobile()">Skills</a>
-        <a (click)="gotoExperiencesMobile()">Experience</a>
-        <a (click)="gotoProjectsMobile()">Projects</a>
+        <a routerLink="/skills">Skills</a>
+        <a routerLink="/experience">Experience</a>
+        <a routerLink="/projects">Projects</a>
         <a (click)="gotoContactMobile()">Contact</a>
     </div>
 </nav>
