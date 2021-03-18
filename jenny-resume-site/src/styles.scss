@@ -23,6 +23,7 @@ button:focus {
 .modal {
 	z-index: 100001 !important;
 	animation: fadeIn 0.5s;
+	opacity: 1;
 }
 
 @keyframes fadeIn {

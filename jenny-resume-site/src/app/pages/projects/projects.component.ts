@@ -7,7 +7,7 @@ import * as anime from 'animejs';
 import smoothscroll from 'smoothscroll-polyfill';
 declare var anime: any;
 
-import projects from './folder/projects.json';
+import projects from './content/projects.json';
 
 @Component({
   selector: 'app-projects',
