@@ -29,7 +29,7 @@
         ]
     },
     {
-        "title": "Frameworks",
+        "title": "Frameworks & Libraries",
         "data": [
             {
                 "name": "Django",
@@ -41,7 +41,11 @@
             },
             {
                 "name": "Angular",
-                "grade": 75
+                "grade": 65
+            },
+            {
+                "name": "Bootstrap",
+                "grade": 60
             },
             {
                 "name": "Node.js",
@@ -54,14 +58,14 @@
         ]
     },
     {
-        "title": "Technologies",
+        "title": "Software, Tools, & Platforms",
         "data": [
             {
-                "name": "MongoDB",
+                "name": "Linux",
                 "grade": 90
             },
             {
-                "name": "PostgresSQL",
+                "name": "Visual Studio",
                 "grade": 80
             },
             {
@@ -69,12 +73,25 @@
                 "grade": 80
             },
             {
-                "name": "Firebase",
-                "grade": 70
+                "name": "Jira (AGILE Scrum)",
+                "grade": 75
             },
             {
                 "name": "Google Cloud Platform",
                 "grade": 30
+            }
+        ]
+    },
+    {
+        "title": "DevOps",
+        "data": [
+            {
+                "name": "Web Deployment",
+                "grade": 55
+            },
+            {
+                "name": "CI/CD",
+                "grade": 50
             },
             {
                 "name": "Docker",
@@ -87,27 +104,52 @@
         ]
     },
     {
-        "title": "Software, Tools, & DevOps",
+        "title": "Databases",
         "data": [
             {
-                "name": "Linux",
+                "name": "MongoDB",
                 "grade": 90
             },
             {
-                "name": "Visual Studio",
+                "name": "PostgresSQL",
                 "grade": 80
             },
             {
-                "name": "Agile (Scrum)",
+                "name": "Firebase (Firestore)",
+                "grade": 50
+            },
+            {
+                "name": "SQLite",
+                "grade": 65
+            }
+        ]
+    },
+    {
+        "title": "People & Intrapersonal Skills",
+        "data": [
+            {
+                "name": "Resilience",
+                "grade": 100
+            },
+            {
+                "name": "Leadership",
                 "grade": 75
             },
             {
-                "name": "Web Deployment",
-                "grade": 55
+                "name": "Teamwork",
+                "grade": 60
             },
             {
-                "name": "CI/CD",
+                "name": "Initiative",
                 "grade": 50
+            },
+            {
+                "name": "Critical Thinking",
+                "grade": 40
+            },
+            {
+                "name": "Independence",
+                "grade": 45
             }
         ]
     },
@@ -115,8 +157,12 @@
         "title": "Interests",
         "data": [
             {
-                "name": "Piano & Music Composition",
+                "name": "Piano",
                 "grade": 70
+            },
+            {
+                "name": "Music Composition & Covers",
+                "grade": 60
             },
             {
                 "name": "Creative Writing",

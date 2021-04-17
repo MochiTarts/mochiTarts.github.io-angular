@@ -11,7 +11,7 @@ footer h2 {
     font-size: 20px;
 }
 
-footer p {
+footer .email {
     font-weight: bolder;
     font-size: 15px;
 }
@@ -54,4 +54,23 @@ footer p {
     padding: 10px;
     margin: auto;
     width: 100%;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 550px) {
+    
+footer h2 {
+    font-size: 18px;
+}
+
+footer .email {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer-final-text {
+    font-size: 12px;
+}
+
 }

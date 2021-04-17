@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import Chart, { ChartOptions, ChartType, ChartColor } from 'chart.js';
 import * as pluginLabels from 'chartjs-plugin-labels';
 import { NgxSpinnerService } from "ngx-spinner";
@@ -17,7 +17,7 @@ import skills from './content/skills.json';
 })
 export class SkillsComponent implements OnInit, AfterViewInit {
   skillsHeader: string = "My Skills"
-  skillsSlogan: string = "A summary of what I can do"
+  skillsSlogan: string = "A summary of what I can do and how adept I am at each"
   skillsTitle: string = "Skills";
   skillsCategory: string = "Languages";
   skillsData: Array<any>;
@@ -29,24 +29,31 @@ export class SkillsComponent implements OnInit, AfterViewInit {
   doughnutChartOptions: ChartOptions = {
     responsive: true,
     maintainAspectRatio: false,
+    animation: {
+      duration: 0
+    },
     plugins: {
       labels: [
         {
           render: 'percentage',
           precision: 2,
-          fontColor: '#fff'
         }
       ],
     },
     legend: {
       display: true,
       labels: {
-        fontColor: '#fff',
-        fontSize: 15
+        fontSize: this.getLabelSize()
       }
     }
   };
   resumeTitle: string = "Resume";
+
+  @HostListener('window:resize', ['$event'])
+  getLabelSize():number {
+    var width = window.innerWidth;
+    return Math.min(width/26, 15);
+  }
 
   constructor(private spinner: NgxSpinnerService) {
     this.skillsData = skills;
@@ -91,10 +98,9 @@ export class SkillsComponent implements OnInit, AfterViewInit {
       anime.timeline({loop: false})
       .add({
         targets: '.ml2 .letter',
-        translateY: ["1.1em", 0],
-        translateZ: 0,
-        duration: 750,
-        delay: (el, i) => 50 * i,
+        rotateY: [-90, 0],
+        duration: 1300,
+        delay: (el, i) => 45 * i,
         complete: this.deleteSpanml2
       })
 
@@ -115,6 +121,13 @@ export class SkillsComponent implements OnInit, AfterViewInit {
   deleteSpanml2() {
     var textWrapper = document.querySelector('.ml2 .letters');
     textWrapper.innerHTML = textWrapper.textContent.replace("<span class='letter'>", "").replace("</span>", "");
+  }
+
+  gotoSkills() {
+    let el = document.getElementById("skills");
+    el.scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 
   doughnutChartData(data: Array<any>) {

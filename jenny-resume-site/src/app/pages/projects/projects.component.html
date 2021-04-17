@@ -9,6 +9,11 @@
                 </span>
             </h2>
         </div>
+
+        <div></div>
+        <div class="bounce">
+            <a class="fa fa-angle-double-down" (click)="gotoProjects()"></a>
+        </div>
     </div>
 </div>
 
@@ -21,21 +26,23 @@
     <div class="projects-summary-container">
         <div class="row no-gutters projects-row">
             <div class="col-lg-4" *ngFor="let project of projectsInfo">
-                <mat-card class="project-card mat-elevation-z8" data-aos="fade-up">
-                    <mat-card-header>
-                        <mat-card-title class="project-title">{{ project.title }}</mat-card-title>
-                    </mat-card-header>
-                    <div mat-card-image class="project-image-container">
-                        <img class="project-image" src="{{ project.thumbnail }}" [lazyLoad]="project.thumbnail">
-                    </div>
-                    <mat-card-content class="project-short-desc">
-                        <h5>{{ project.date }}</h5>
-                        <p>{{ project.short_desc }}</p>
-                    </mat-card-content>
-                    <mat-card-actions>
-                        <button mat-button class="project-button" (click)="open(projectContent, project)">VIEW PROJECT</button>
-                    </mat-card-actions>
-                </mat-card>
+                <div data-aos="fade-up" style="height: 100%;">
+                    <mat-card class="project-card mat-elevation-z8" (click)="open(projectContent, project)">
+                        <mat-card-header>
+                            <mat-card-title class="project-title">{{ project.title }}</mat-card-title>
+                        </mat-card-header>
+                        <div mat-card-image class="project-image-container">
+                            <img class="project-image" src="{{ project.thumbnail }}" [lazyLoad]="project.thumbnail">
+                        </div>
+                        <mat-card-content class="project-short-desc">
+                            <h5>{{ project.date }}</h5>
+                            <p>{{ project.short_desc }}</p>
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <button mat-button class="project-button mat-elevation-z8">VIEW PROJECT</button>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
             </div>
         </div>
     </div>
@@ -66,7 +73,7 @@
         </div>
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" (click)="gotoProjectLink(projectLink)">View More</button>
+        <button *ngIf="projectLink !== undefined" type="button" class="btn btn-outline-dark" (click)="gotoProjectLink(projectLink)">View More</button>
         <button *ngIf="projectWebsite !== undefined" type="button" class="btn btn-outline-dark" (click)="gotoProjectLink(projectWebsite)">Website</button>
     </div>
 </ng-template>

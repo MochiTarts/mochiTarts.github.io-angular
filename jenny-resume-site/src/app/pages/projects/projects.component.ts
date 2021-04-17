@@ -67,10 +67,9 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
       anime.timeline({loop: false})
       .add({
         targets: '.ml2 .letter',
-        translateY: ["1.1em", 0],
-        translateZ: 0,
-        duration: 750,
-        delay: (el, i) => 50 * i,
+        rotateY: [-90, 0],
+        duration: 1300,
+        delay: (el, i) => 45 * i,
         complete: this.deleteSpanml2
       })
 
@@ -91,6 +90,13 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   deleteSpanml2() {
     var textWrapper = document.querySelector('.ml2 .letters');
     textWrapper.innerHTML = textWrapper.textContent.replace("<span class='letter'>", "").replace("</span>", "");
+  }
+
+  gotoProjects() {
+    let el = document.getElementById("projects");
+    el.scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 
   gotoProjectLink(link: string) {

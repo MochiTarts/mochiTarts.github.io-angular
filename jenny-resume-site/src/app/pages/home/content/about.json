@@ -5,25 +5,25 @@
         "points": [
             "A computer science student specializing in the software engineering stream. Currently studying at the University of Toronto",
             "Currently a full stack developer on the Find Dining Project at UTSC the BRIDGE",
-            "An aspiring full stack developer with an interest in machine learning, especially the subject of sentiment analysis"
+            "An aspiring full stack developer with an interest in machine learning, especially on the subject of sentiment analysis"
         ]
     },
     {
         "id": "2",
         "title": "I can do...",
         "points": [
-            "Developing large, beautiful, and dynamic web or mobile applications for various projects",
-            "Working with a number of tools, frameworks, and databases. Though I can work full stack, I mainly specialize in backend development using frameworks such as Java Spring and Python Django",
-            "A couple of minor projects in assembly and circuit design"
+            "Development of large, beautiful, and dynamic web or mobile applications for various projects",
+            "Work with a number of programming tools, frameworks, and databases. I'm able to do full stack, but I mainly specialize in backend development using frameworks such as Java Spring and Python Django",
+            "Assembly coding and simple circuit designs"
         ]
     },
     {
         "id": "3",
         "title": "I also do...",
         "points": [
-            "Piano-performer and teacher with an ARCT certification from the Royal Conservatory of Music",
+            "Piano-performing and teaching. I am an ARCT certified pianist from the Royal Conservatory of Music",
             "Creative writing, visual arts, and music composition. I enjoy posting some of my works online",
-            "Proficient in Adobe Photoshop+Illustrator and FL Studio"
+            "Designing with Adobe Photoshop+Illustrator and composing/covering using FL Studio"
         ]
     }
 ]

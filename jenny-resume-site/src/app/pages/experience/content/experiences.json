@@ -1,13 +1,14 @@
 [
     {
-        "job_title": "Full Stack Developer",
+        "job_title": "Full Stack Application & Web Developer",
         "date": "Jan 2021 - Present",
         "company": "UTSC The Bridge",
         "points": [
-            "Took charge of a team of 4 developers taught them the overview of the web app's infrastructure on the 1st week; explained to them how Django sends data from MongoDB to Angular for display and how to make APIs and services",
-            "Implemented, tested, and deployed a temporary data collection page within tight timeline constraints, had to learn the basics of Nginx and Docker in 2 days",
-            "Assisted with improving the project's foundational infrastrucsture and security, mainly with migrating over existing features",
-            "Consistently provided updates to managers and stakeholders, and always modified the website according to changes in their requirements"
+            "Took charge of a team of <b>4 developers</b> and taught them the overview of the web app's infrastructure on the 1st week; explaining to them how <b>Django</b> sends data from <b>MongoDB</b> to <b>Angular</b> for display and how to make <b>APIs</b> and services",
+            "Worked as the technical lead and <b>backend</b> specialist; would often hop in to aid with <b>frontend</b> work or <b>deployment</b>, sometimes even taking over if the original assignee had more urgent tasks to do",
+            "Implemented, tested, and deployed a temporary data collection page within tight timeline constraints, had to learn the basics of <b>Nginx</b> and <b>Docker</b> in <b>2 days</b>",
+            "Assisted with improving the project's foundational infrastructure and security, migrated <b>10+ features</b> over to the new codebase in less than <b>2 weeks</b>; concurrently improved the implementation and documentation of several functions",
+            "Constantly re-evaluated and re-engineered existing features to better suit the updated requirements and to better perform for stakeholders, averaging about <b>3 new features</b> every sprint and <b>3 completely revamped ones</b>"
         ]
     },
     {
@@ -15,9 +16,10 @@
         "date": "Jan 2020 - Apr 2020",
         "company": "Royal Bank of Canada",
         "points": [
-            "Adapted to heavier workloads and tighter deadlines within one day after remote work began",
-            "Wrote test cases and automation scripts in LeanFT C# on the 1st week of being onboarded to the mortgage/credit API project, reducing the runtime of tests (when done manually) by 70%",
-            "Fixed unfamiliar technical difficulties within one hour through analysis and troubleshooting, took the initiative of asking mentor for support if the issue was far beyond scope of knowledge"
+            "Immediately picked up the basics of <b>SoapUI</b> and the RBC mortgage & credit form fill-in system within the <b>1st week of onboarding</b>; was able to begin making test cases by the end of the week and smoothly transitioned to the next project about <b>2 weeks later</b>",
+            "Adapted to heavier workloads and tighter deadlines immediately on the day remote work-from-home began",
+            "Wrote test cases and automation scripts in <b>LeanFT C#</b> on the <b>1st week</b> of being onboarded to the mortgage/credit API project, <b>reducing the runtime of tests (when done manually) by 70%</b>",
+            "Fixed unfamiliar technical difficulties within <b>1 hour or less</b> through analysis and troubleshooting, took the initiative of asking mentor for support if the issue was far beyond scope of knowledge"
         ]
     },
     {
@@ -25,9 +27,10 @@
         "date": "Sept 2019 - Jan 2020",
         "company": "Forvera Health",
         "points": [
-            "Collaborated with tech and cross-functional teams to gather requirements and determine tech stacks for developing the health startup’s platform during 2 hour weekly meetings",
-            "Learned the basics of Django in 3 days with guidance from the CTO to start help building the backend infrastructure",
-            "Built a Python script which batch-books patients via SimplyBook API and extracts data for EMRs"
+            "Collaborated with tech and cross-functional teams to gather requirements and determine tech stacks for developing the health startup’s platform during <b>2 hour weekly meetings</b>",
+            "Learned the basics of <b>Django</b> in <b>3 days</b> with guidance from the CTO to start help building the backend infrastructure",
+            "Researched and compared a number of scheduling software to determine which product and its API is best suited for the company's needs, settled with SimplyBook in the end",
+            "Built a <b>Python</b> script which batch-books patients via SimplyBook API and extracts data for EMRs"
         ]
     }
 ]

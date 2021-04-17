@@ -15,8 +15,12 @@
 }
 
 .contact-container {
-	background-color: #62ce86;
+	//background-color: #62ce86;
 	color: white;
+    //background-color: #f4f4f4;
+    //background-color: rgb(101, 149, 37);
+    background-color: rgb(77, 216, 100);
+    //color: #333;
 	padding-bottom: 50px;
     position: relative;
 }
@@ -60,3 +64,11 @@
 	height:1px;
 }
 /* CONTACT */
+
+@media screen and (max-width: 550px) {
+
+.section-title h1 {
+    font-size: 40px;
+}
+
+}

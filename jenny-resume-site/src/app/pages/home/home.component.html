@@ -5,12 +5,16 @@
             <h1 class="ml1">{{ greeting }}</h1>
             <h2 class="ml2">
                 <span class="text-wrapper">
-                    <span class="letters">{{ slogan }}</span>
+                    <span class="letters">
+                        A self-driving computer science student at the University of Toronto
+                    </span>
                 </span>
             </h2>
         </div>
+
+        <div></div>
         <div class="bounce">
-            <a class="fa fa-arrow-down" (click)="gotoAbout()"></a>
+            <a class="fa fa-angle-double-down" (click)="gotoAbout()"></a>
         </div>
     </div>
 </div>
@@ -28,10 +32,14 @@
     <div class="about-me-container">
         <div class="row about-row">
             <div class="col-lg-4"  *ngFor="let section of about">
-                <h2>{{ section.title }}</h2>
-                <ul *ngFor="let point of section.points">
-                    <li>{{ point }}</li>
-                </ul>
+                <mat-card class="about-card mat-elevation-z8" style="height: 100%;" data-aos="fade-up">
+                    <h2>{{ section.title }}</h2>
+                    <div class="list-container">
+                        <ul *ngFor="let point of section.points">
+                            <li>{{ point }}</li>
+                        </ul>
+                    </div>
+                </mat-card>
             </div>
         </div>
     </div>

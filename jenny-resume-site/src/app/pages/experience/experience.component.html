@@ -9,6 +9,11 @@
                 </span>
             </h2>
         </div>
+
+        <div></div>
+        <div class="bounce">
+            <a class="fa fa-angle-double-down" (click)="gotoExperience()"></a>
+        </div>
     </div>
 </div>
 
@@ -27,7 +32,7 @@
                 <mat-card-content class="experience-short-desc">
                     <h5><i>{{ job.date }}</i> | {{ job.company }}</h5>
                     <ul *ngFor="let point of job.points">
-                        <li class="jobpoint">{{ point }}</li>
+                        <li class="jobpoint" [innerHTML]="point"></li>
                     </ul>
                 </mat-card-content>
             </mat-card>
@@ -40,24 +45,34 @@
                     <h6><i>{{ job.date }}</i> | {{ job.company }}</h6>
                 </mat-card-content>
                 <mat-card-actions>
-                    <button mat-button class="experience-button" (click)="openJob(experienceContent, job)">SEE MORE</button>
+                    <button mat-button class="experience-button mat-elevation-z8" (click)="openJob(experienceContent, job)">SEE MORE</button>
                 </mat-card-actions>
             </mat-card>
+        </div>
+
+        <div class="row no-gutters experiences-row" data-aos="fade-up">
+            <div class="resumeTitle">
+                <div class="link">
+                    <a href="../../../assets/Winter 2021 Resume.pdf" target="_blank">
+                        *Link to External Resume
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <ng-template #experienceContent let-modal>
     <div class="modal-header">
-        <h4 class="modal-title" id="modal-basic-title">{{ jobTitle }}</h4>
+        <h4 class="modal-title" id="modal-basic-title" style="color: #333;">{{ jobTitle }}</h4>
         <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>
         </button>
     </div>
     <div class="modal-body">
         <h5><i>{{ jobDate }}</i> | {{ jobCompany }}</h5>
-        <ul *ngFor="let point of jobPoints">
-            <li class="jobpoint">{{ point }}</li>
+        <ul *ngFor="let point of jobPoints" style="color: #333;">
+            <li class="jobpoint" [innerHTML]="point"></li>
         </ul>
     </div>
 </ng-template>

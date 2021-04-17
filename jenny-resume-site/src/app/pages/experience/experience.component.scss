@@ -5,6 +5,14 @@
     text-align: center;
 }
 
+.underline {
+    //border-bottom: 3px solid #d48c7d;
+	border-bottom: 3px solid #333;
+    width: 100px;
+    padding-top: 25px;
+    margin: auto;
+}
+
 /* HEADER */
 .header {
     background-image: url('/assets/header.jpeg');
@@ -20,18 +28,19 @@
 	background-color: rgba($color: #000, $alpha: 0.5);
     height: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .bounce {
-    position: absolute;
-    bottom: 5%;
-    right: 0;
-    margin-right: 50px;
+    margin-bottom: 25px;
 }
 
 .overlay-header .fa {
     color: white;
-    font-size: 50px;
+    font-size: 70px;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
@@ -93,7 +102,8 @@
 .experiences-container {
     height: fit-content;
     //background-color: #eee;
-	background-color: #73d393;
+	//background-color: #73d393;
+    background-color: rgb(125, 236, 111);
 	color: white;
 	padding-bottom: 50px;
 }
@@ -128,6 +138,7 @@
     text-align: left;
     font-size: 25px !important;
 	font-weight: bolder;
+    color: #333;
 }
 
 .experience-button {
@@ -145,10 +156,29 @@
     color: #888;
 }
 
+.experience-short-desc ul {
+    padding-left: 20px;
+}
+
 .experience-short-desc li {
-    font-size: 20px;
-	float: left;
+    font-size: 18px;
 	list-style-type: square;
+    color: #333;
+}
+
+.resumeTitle {
+    margin: 0 0 10px 0;
+    top: 0;
+    width: 100%;
+}
+
+.resumeTitle .link {
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+.resumeTitle a {
+    color: white;
 }
 /* EXPERIENCES */
     
@@ -156,9 +186,21 @@
 @media screen and (max-width: 550px) {
 
 /* EXPERIENCES */
+.title-wrapper h1, .section-title h1 {
+    font-size: 40px;
+}
+
+.title-wrapper h2 {
+    font-size: 16px;
+}
+
+.overlay-header .fa {
+    font-size: 50px;
+}
+
 .experiences-summary-container {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .experience-card {
@@ -178,8 +220,13 @@
     margin-bottom: 35px;
 }
 
+.experience-title {
+    font-size: 20px !important;
+}
+
 .experience-card-mobile button {
     margin-bottom: 10px;
+    font-size: 10px;
 }
 
 .experience-short-desc {
@@ -201,10 +248,21 @@
 
 .modal-body h5 {
     color: #888;
+    font-size: 18px;
+}
+
+.modal-body ul {
+    padding-left: 20px;
 }
 
 .modal-body li {
-    float: left;
+	list-style-type: square;
+    color: #333;
+    font-size: 14px;
+}
+
+.resumeTitle a {
+    font-size: 18px;
 }
 /* EXPERIENCES */
 
