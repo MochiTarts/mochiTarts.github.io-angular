@@ -120,6 +120,7 @@
 
 .projects-row .col-lg-4 {
     margin-bottom: 25px;
+    gap: 10px;
 }
 
 .project-card {
@@ -127,7 +128,7 @@
     position: relative;
     height: 100%;
     border-radius: 10px;
-    margin: 0px 10px;
+    //margin: 0px 10px;
     background-color: white;
     -webkit-transition: 0.2s;
     transition: 0.2s;
