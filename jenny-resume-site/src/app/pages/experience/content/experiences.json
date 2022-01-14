@@ -4,7 +4,10 @@
         "date": "Sept 2021 - Dec 2021",
         "company": "Microsoft",
         "points": [
-            "To be added later..."
+            "Oversaw the <b>research</b> and <b>implementation</b> of an urgent feature for MS Teams, where fullscreen toggle on video chat messages must be disabled on unsupported versions of Teams desktop (ver. >1.4.7) and other scenarios (popout chat, Teams Outlook extension) for the <b>MVP product of MS Teams inline video chat</b>",
+            "Used <b>Azure DevOps</b> to organize and track PBIs required to complete the feature, organizing the requirements and acceptance criteria, as well as the <b>work effort</b> and <b>priority</b> of each PBI task",
+            "Exposed a new parameter for manually disabling fullscreen toggle in the OnePlayer <b>React</b> codebase, allowing the parameter to be consumed on the MS Teams codebase when initializing video chat messages via OnePlayer <b>API</b>, the parameter value is set using a combination of <b>configuration setting flags</b> to determine fullscreen support eligibility",
+            "Maintained <b>100% code compatibility</b> on OnePlayer and MS Teams codebases by writing <b>unit tests</b> in <b>JEST</b> and ensuring all PR <b>build pipelines</b> on Azure DevOps pass"
         ]
     },
     {
