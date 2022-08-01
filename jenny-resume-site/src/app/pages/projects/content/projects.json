@@ -1,5 +1,34 @@
 [
     {
+        "title": "Scikit-Learn",
+        "date": "Jan 2022 - Apr 2022",
+        "thumbnail": "../../../assets/scikit-learn.png",
+        "short_desc": "An open-source library for machine learning built in Python.",
+        "images": [
+            {
+                "image": "../../../assets/scikit-learn.png",
+                "alt": "Scikit Learn logo"
+            },
+            {
+                "image": "../../../assets/fit.png",
+                "alt": "Bisecting K-Means Fit"
+            },
+            {
+                "image": "../../../assets/predicted.png",
+                "alt": "Bisecting K-Means Predict"
+            }
+        ],
+        "long_desc": "During my 4th year winter semester, my engineering large software systems had us split into groups to contribute to the open source Scikit-Learn library. My group and I resolved small bugs ranging from formatting issues in regression models to inaccurate predictions in algorithms.\n\n Our largest and most difficult contribution was implementing a entirely new regression model using the bisecting k-means algorithm. To this end, we had to conduct research on the algorithm, and follow Scikit-Learn's existing design principles.\n\n I implemented the majority of the new model's estimator method using Numpy methods and arrays. Together with the rest of my team, we touched up on implementation details, fixing bugs and resolving edge cases while testing. As a result, we managed to achieve 90% prediction accuracy with our model.",
+        "link": "https://github.com/ajz2000/scikit-learn",
+        "tags": [
+            {"tag": "Python", "badge": "badge-primary"},
+            {"tag": "Numpy", "badge": "badge-secondary"},
+            {"tag": "Machine Learning", "badge": "badge-success"},
+            {"tag": "Duck Typing", "badge": "badge-info"},
+            {"tag": "Scrum", "badge": "badge-dark"}
+        ]
+    },
+    {
         "title": "Find Dining",
         "date": "Jan 2021 - Apr 2021",
         "thumbnail": "../../../assets/find_dining_logo_name.png",

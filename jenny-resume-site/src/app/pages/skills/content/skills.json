@@ -8,7 +8,7 @@
             },
             {
                 "name": "Java",
-                "grade": 75
+                "grade": 60
             },
             {
                 "name": "HTML/CSS",
@@ -16,15 +16,15 @@
             },
             {
                 "name": "C#",
-                "grade": 45
+                "grade": 35
             },
             {
                 "name": "Typescript",
-                "grade": 40
+                "grade": 65
             },
             {
                 "name": "Javascript",
-                "grade": 25
+                "grade": 50
             }
         ]
     },
@@ -37,11 +37,11 @@
             },
             {
                 "name": "Spring Boot",
-                "grade": 90
+                "grade": 65
             },
             {
                 "name": "Angular",
-                "grade": 65
+                "grade": 75
             },
             {
                 "name": "Bootstrap",
@@ -53,7 +53,7 @@
             },
             {
                 "name": "React",
-                "grade": 25
+                "grade": 55
             }
         ]
     },
@@ -145,7 +145,7 @@
             },
             {
                 "name": "Critical Thinking",
-                "grade": 40
+                "grade": 45
             },
             {
                 "name": "Independence",
