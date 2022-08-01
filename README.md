@@ -1,9 +1,27 @@
-# My Resume Portfolio Site
+# JennyResumeSite
 
-This is a website I made using Angular. It features some of my skills, work experiences, projects, and miscellaneous stuff about myself.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
 
 ## Development server
 
-Visit my site - [MochiTarts.github.io](https://mochitarts.github.io/)
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-To view this website locally, run ``` ng serve ``` from the ``` jenny-resume-site/ ``` folder, and then navigate to ``` http://localhost:4200 ```. Any changes made to the source files will cause the app to automatically reload.
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
