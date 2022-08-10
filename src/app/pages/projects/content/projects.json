@@ -2,19 +2,19 @@
     {
         "title": "Scikit-Learn",
         "date": "Jan 2022 - Apr 2022",
-        "thumbnail": "/assets/scikit-learn.png",
+        "thumbnail": "./assets/scikit-learn.png",
         "short_desc": "An open-source library for machine learning built in Python.",
         "images": [
             {
-                "image": "/assets/scikit-learn.png",
+                "image": "./assets/scikit-learn.png",
                 "alt": "Scikit Learn logo"
             },
             {
-                "image": "/assets/fit.png",
+                "image": "./assets/fit.png",
                 "alt": "Bisecting K-Means Fit"
             },
             {
-                "image": "/assets/predicted.png",
+                "image": "./assets/predicted.png",
                 "alt": "Bisecting K-Means Predict"
             }
         ],
@@ -31,52 +31,52 @@
     {
         "title": "Find Dining",
         "date": "Jan 2021 - Apr 2021",
-        "thumbnail": "/assets/find_dining_logo_name.png",
+        "thumbnail": "./assets/find_dining_logo_name.png",
         "short_desc": "An online promotion platform for Scarborough restaurants to share their stories.",
         "images": [
             {
-                "image": "/assets/find_dining_logo_name.png",
+                "image": "./assets/find_dining_logo_name.png",
                 "alt": "Find Dining logo"
             },
             {
 
-                "image": "/assets/finddining_home.png",
+                "image": "./assets/finddining_home.png",
                 "alt": "Find Dining homepage"
             },
             {
-                "image": "/assets/finddining_login.png",
+                "image": "./assets/finddining_login.png",
                 "alt": "Find Dining login page"
             },
             {
-                "image": "/assets/finddining_articles.png",
+                "image": "./assets/finddining_articles.png",
                 "alt": "Find Dining media page"
             },
             {
-                "image": "/assets/finddining_article.png",
+                "image": "./assets/finddining_article.png",
                 "alt": "Find Dining article"
             },
             {
-                "image": "/assets/finddining_browse.png",
+                "image": "./assets/finddining_browse.png",
                 "alt": "Find Dining restaurants browse page"
             },
             {
-                "image": "/assets/finddining_restaurant.png",
+                "image": "./assets/finddining_restaurant.png",
                 "alt": "Find Dining restaurant profile page"
             },
             {
-                "image": "/assets/finddining_dish.png",
+                "image": "./assets/finddining_dish.png",
                 "alt": "Find Dining specials dish page"
             },
             {
-                "image": "/assets/finddining_notes.png",
+                "image": "./assets/finddining_notes.png",
                 "alt": "Find Dining extra restaurant info page"
             },
             {
-                "image": "/assets/finddining_profile.png",
+                "image": "./assets/finddining_profile.png",
                 "alt": "Find Dining user profile page"
             },
             {
-                "image": "/assets/finddining_newsletter.png",
+                "image": "./assets/finddining_newsletter.png",
                 "alt": "Find Dining newsletter signup page"
             }
         ],
@@ -97,11 +97,11 @@
     {
         "title": "U-Impactify",
         "date": "Sept 2020 - Dec 2020",
-        "thumbnail": "/assets/uimpact_logo.png",
+        "thumbnail": "./assets/uimpact_logo.png",
         "short_desc": "An online learning and consulting platform targted to Social Organizations.",
         "images": [
             {
-                "image": "/assets/uimpact_logo.png",
+                "image": "./assets/uimpact_logo.png",
                 "alt": "U-Impactify logo"
             }
         ],
@@ -119,43 +119,43 @@
     {
         "title": "Doodlejump",
         "date": "Dec 2020",
-        "thumbnail": "/assets/doodlejump_start_copy.png",
+        "thumbnail": "./assets/doodlejump_start_copy.png",
         "short_desc": "A MIPS coded assembly project that is based the classic Doodlejump game.",
         "images": [
             {
-                "image": "/assets/doodlejump_start.png",
+                "image": "./assets/doodlejump_start.png",
                 "alt": "Start screen of doodlejump game"
             },
             {
-                "image": "/assets/doodlejump_instructions.png",
+                "image": "./assets/doodlejump_instructions.png",
                 "alt": "Instructional guide of doodlejump game"
             },
             {
-                "image": "/assets/doodlejump_easy.png",
+                "image": "./assets/doodlejump_easy.png",
                 "alt": "Easy level of doodlejump game"
             },
             {
-                "image": "/assets/doodlejump_features.png",
+                "image": "./assets/doodlejump_features.png",
                 "alt": "Bombs, boosts, and shields in doodlejump game"
             },
             {
-                "image": "/assets/doodlejump_end.png",
+                "image": "./assets/doodlejump_end.png",
                 "alt": "End screen of doodlejump game"
             },
             {
-                "image": "/assets/doodlejump_medium.png",
+                "image": "./assets/doodlejump_medium.png",
                 "alt": "Medium level of doodlejump game"
             },
             {
-                "image": "/assets/doodlejump_shield.png",
+                "image": "./assets/doodlejump_shield.png",
                 "alt": "Shielded doodler in doodlejump game"
             },
             {
-                "image": "/assets/doodlejump_hard.png",
+                "image": "./assets/doodlejump_hard.png",
                 "alt": "Hard level of doodlejump game"
             },
             {
-                "image": "/assets/doodlejump_hard_bomb.png",
+                "image": "./assets/doodlejump_hard_bomb.png",
                 "alt": "Doodler close to bomb in doodlejump game"
             }
         ],
@@ -169,35 +169,35 @@
     {
         "title": "Android Shopping App",
         "date": "Nov 2019 - Dec 2019",
-        "thumbnail": "/assets/androidapp_store.png",
+        "thumbnail": "./assets/androidapp_store.png",
         "short_desc": "A simple functional shopping app made for Android phones.",
         "images": [
             {
-                "image": "/assets/androidapp_login.png",
+                "image": "./assets/androidapp_login.png",
                 "alt": "Login of android app"
             },
             {
-                "image": "/assets/androidapp_store.png",
+                "image": "./assets/androidapp_store.png",
                 "alt": "Store display of android app"
             },
             {
-                "image": "/assets/androidapp_cart.png",
+                "image": "./assets/androidapp_cart.png",
                 "alt": "Customer's shopping cart of android app"
             },
             {
-                "image": "/assets/androidapp_checkout.png",
+                "image": "./assets/androidapp_checkout.png",
                 "alt": "Checkout screen of android app"
             },
             {
-                "image": "/assets/androidapp_admin.png",
+                "image": "./assets/androidapp_admin.png",
                 "alt": "Admin screen of android app"
             },
             {
-                "image": "/assets/androidapp_employee.png",
+                "image": "./assets/androidapp_employee.png",
                 "alt": "Employee screen of android app"
             },
             {
-                "image": "/assets/androidapp_restock.png",
+                "image": "./assets/androidapp_restock.png",
                 "alt": "Restock screen of android app"
             }
         ],
@@ -215,23 +215,23 @@
     {
         "title": "Mood",
         "date": "Nov 2019",
-        "thumbnail": "/assets/mood.jpeg",
+        "thumbnail": "./assets/mood.jpeg",
         "short_desc": "A sentiment analysis web app that will generate films, music, and gifs according to your mood.",
         "images": [
             {
-                "image": "/assets/mood.jpeg",
+                "image": "./assets/mood.jpeg",
                 "alt": "Landing page of mood web app"
             },
             {
-                "image": "/assets/mood_demo.jpeg",
+                "image": "./assets/mood_demo.jpeg",
                 "alt": "Detecting a person's mood using the built-in emotion detector"
             },
             {
-                "image": "/assets/mood_results.jpeg",
+                "image": "./assets/mood_results.jpeg",
                 "alt": "Results page of a surprised mood"
             },
             {
-                "image": "/assets/mood_moreresults.jpeg",
+                "image": "./assets/mood_moreresults.jpeg",
                 "alt": "Full results page of a fearful mood"
             }
         ],
@@ -250,11 +250,11 @@
     {
         "title": "Old Portfolio Website",
         "date": "Sept 2019",
-        "thumbnail": "/assets/Portfolio_website.jpeg",
+        "thumbnail": "./assets/Portfolio_website.jpeg",
         "short_desc": "The previous portfolio website I created to present my skills, projects, and work experience.",
         "images": [
             {
-                "image": "/assets/Portfolio_website.jpeg",
+                "image": "./assets/Portfolio_website.jpeg",
                 "alt": "Landing page of old portfolio website"
             }
         ],
@@ -269,71 +269,71 @@
     {
         "title": "Heir to the Throne",
         "date": "Mar 2017 - Apr 2017",
-        "thumbnail": "/assets/game.jpeg",
+        "thumbnail": "./assets/game.jpeg",
         "short_desc": "A point-&-click adventure game made using JavaScript, sessionStorage, and HTML/CSS.",
         "images": [
             {
-                "image": "/assets/game.jpeg",
+                "image": "./assets/game.jpeg",
                 "alt": "Opening page of Heir to the Throne"
             },
             {
-                "image": "/assets/game_hallway.png",
+                "image": "./assets/game_hallway.png",
                 "alt": "Location choice page of Heir to the Throne"
             },
             {
-                "image": "/assets/game_room_clues.png",
+                "image": "./assets/game_room_clues.png",
                 "alt": "Clue on mirror of a room"
             },
             {
-                "image": "/assets/game_room_no_clues.png",
+                "image": "./assets/game_room_no_clues.png",
                 "alt": "Clue on broken mirror of a room"
             },
             {
-                "image": "/assets/game_royal_children.png",
+                "image": "./assets/game_royal_children.png",
                 "alt": "Page displaying profile of the royal children and clues gathered"
             },
             {
-                "image": "/assets/game_barracks_secret.png",
+                "image": "./assets/game_barracks_secret.png",
                 "alt": "Secret area in barracks room of game"
             },
             {
-                "image": "/assets/game_secret_room_heir.png",
+                "image": "./assets/game_secret_room_heir.png",
                 "alt": "Secret room where heir is revealed"
             },
             {
-                "image": "/assets/game_dungeon_secret.png",
+                "image": "./assets/game_dungeon_secret.png",
                 "alt": "Secret area in dungeon room of game"
             },
             {
-                "image": "/assets/game_quick_time.png",
+                "image": "./assets/game_quick_time.png",
                 "alt": "Quick time events of dungeon room"
             },
             {
-                "image": "/assets/game_quick_time_success.png",
+                "image": "./assets/game_quick_time_success.png",
                 "alt": "Successful quick time events of dungeon room"
             },
             {
-                "image": "/assets/game_secret_out.png",
+                "image": "./assets/game_secret_out.png",
                 "alt": "Secret room where outsider is revealed"
             },
             {
-                "image": "/assets/game_arrest_out.png",
+                "image": "./assets/game_arrest_out.png",
                 "alt": "Arresting the outsider"
             },
             {
-                "image": "/assets/game_good_end.png",
+                "image": "./assets/game_good_end.png",
                 "alt": "Good ending of the game"
             },
             {
-                "image": "/assets/game_out_poison.png",
+                "image": "./assets/game_out_poison.png",
                 "alt": "Being offered water by the outsider"
             },
             {
-                "image": "/assets/game_poisoned.png",
+                "image": "./assets/game_poisoned.png",
                 "alt": "Ending where you get poisoned by the outsider"
             },
             {
-                "image": "/assets/game_bad_end.png",
+                "image": "./assets/game_bad_end.png",
                 "alt": "Ending where you arrest the heir to the throne"
             }
         ],
