@@ -20,7 +20,7 @@ jobs:
       run: |
         npm install
         npm install -g @angular/cli@9.1.15 > /dev/null
-        ng build --prod --base-href 'https://mochitarts.github.io/'
+        ng build --prod --base-href 'https://mochitarts.github.io/mochiTarts.github.io-angular'
         cp ./dist/index.html ./dist/404.html
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
